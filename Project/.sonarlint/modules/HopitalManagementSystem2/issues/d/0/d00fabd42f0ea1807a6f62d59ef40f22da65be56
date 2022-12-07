@@ -1,0 +1,12 @@
+
+vsquid:UselessImportCheck";Remove this unused import 'com.example.model.PatientLogin'.(âûœ¹Hö…RMINORZ
+CODE_SMELL
+Šsquid:UselessImportCheck"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(ÄºöïþÿÿÿÿH÷…RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck"4Remove this unused import 'com.example.model.Login'.(®»ÈÉùÿÿÿÿHø…RMINORZ
+CODE_SMELL
+ksquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿHù…RMINORZ
+CODE_SMELL
+psquid:UselessImportCheck
+"5Remove this unused import 'com.example.model.Doctor'.(ßó½œHú…RMINORZ
+CODE_SMELL

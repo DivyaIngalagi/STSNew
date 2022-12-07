@@ -1,0 +1,57 @@
+package com.impact.project.serviceimpl;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.entities.Nurse;
+import com.impact.project.entities.User;
+import com.impact.project.repo.NurseRepo;
+
+@ExtendWith(MockitoExtension.class)
+class NurseServiceImplTest {
+
+    @Mock
+    private NurseRepo nurseRepo;
+
+    @InjectMocks
+    private NurseServiceImpl nurseServieImpl;
+
+    Nurse nurse;
+
+    List<Nurse> nurseList;
+
+    @BeforeEach
+    public void setUp() {
+        User user = new User();
+        user.setUserId(1);
+        user.setFirstName("Divya");
+        nurse = new Nurse();
+        nurse.setNurseId(1);
+        nurse.setUser(user);
+    }
+
+    @Test
+    void testUpdateNurse() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAllNursesDetails() {
+        // fail("Not yet implemented");
+
+    }
+
+    @Test
+    void testGetNurseById() {
+        fail("Not yet implemented");
+    }
+
+}

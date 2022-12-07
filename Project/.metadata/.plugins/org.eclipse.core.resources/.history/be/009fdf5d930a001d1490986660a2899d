@@ -1,0 +1,44 @@
+package com.impact.project.serviceimpl;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class NurseServiceImplTest {
+
+    @Test
+    void testSaveNurse() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testUpdateNurse() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testDeleteNurse() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAllNursesDetails() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetNurseById() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAddress() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testActiveNurse() {
+        fail("Not yet implemented");
+    }
+
+}

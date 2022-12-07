@@ -1,0 +1,204 @@
+package com.impact.project.serviceImpl;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.dto.PatientHistoryDto;
+import com.impact.project.model.Diagnosis;
+import com.impact.project.model.Medication;
+import com.impact.project.model.PatientDiagnosis;
+import com.impact.project.model.PatientMedication;
+import com.impact.project.model.PatientProcedure;
+import com.impact.project.model.PatientVitalSigns;
+import com.impact.project.model.Procedure;
+import com.impact.project.repository.DiagnosisRepository;
+import com.impact.project.repository.MedicationRepository;
+import com.impact.project.repository.PatientDiagnosisRepository;
+import com.impact.project.repository.PatientMedicationRepository;
+import com.impact.project.repository.PatientProcedureRepository;
+import com.impact.project.repository.PatientVitalSignsRepository;
+import com.impact.project.repository.ProcedureRepository;
+
+@ExtendWith(MockitoExtension.class)
+class PatientVisitServiceImplTest {
+
+    @Mock
+    private ProcedureRepository procedureRepository;
+
+    @Mock
+    private DiagnosisRepository diagnosisRepository;
+
+    @Mock
+    private MedicationRepository medicationRepository;
+
+    @Mock
+    private PatientDiagnosisRepository patientDiagnosisRepository;
+
+    @Mock
+    private PatientProcedureRepository patientProcedureRepository;
+
+    @Mock
+    private PatientVitalSignsRepository patientVitalSignsRepository;
+
+    @Mock
+    private PatientMedicationRepository patientMedicationRepository;
+
+    @InjectMocks
+    private PatientVisitServiceImpl patientVisitServiceImpl;
+
+    Procedure procedure;
+
+    Diagnosis diagnosis;
+
+    Medication medication;
+
+    List<Medication> mediationList;
+
+    List<Diagnosis> diagnosisList;
+
+    List<Procedure> procedureList;
+
+    PatientVitalSigns patientVitalSigns;
+
+    List<PatientVitalSigns> patientVitalSignsList;
+
+    PatientDiagnosis patientDiagnosis;
+
+    List<PatientDiagnosis> patientDiagnosisList;
+
+    PatientProcedure patientProcedure;
+
+    List<PatientProcedure> patientProcedureList;
+
+    PatientMedication patientMedication;
+
+    List<PatientMedication> patientMedicationList;
+
+    PatientHistoryDto patientHistoryDto;
+
+    @BeforeEach
+    public void setUp() {
+        procedureList = new ArrayList<>();
+        procedure = new Procedure();
+        procedure.setProcedureCode("PR0011");
+        procedure.setProcedureDescription("Take medicine for 3 times");
+        procedure.setProcedureId(1);
+        procedureList.add(procedure);
+
+        diagnosisList = new ArrayList<>();
+        diagnosis = new Diagnosis();
+        diagnosis.setDiagnosisCode("DR0011");
+        diagnosis.setDiagnosisDescription("Radiology");
+        diagnosis.setDiagnosisId(1);
+        diagnosisList.add(diagnosis);
+
+        mediationList = new ArrayList<>();
+        medication = new Medication();
+        medication.setDrugId(1);
+        medication.setDrugForm("Marko");
+        medication.setDrugName("Anestecia");
+        mediationList.add(medication);
+
+        patientVitalSignsList = new ArrayList<>();
+        patientVitalSigns = new PatientVitalSigns();
+        patientVitalSigns.setPatientId(1);
+        patientVitalSigns.setPatientVitalSignsId(101);
+        patientVitalSigns.setIsActive("Yes");
+        patientVitalSignsList.add(patientVitalSigns);
+
+        patientDiagnosisList = new ArrayList<>();
+        patientDiagnosis = new PatientDiagnosis();
+        patientDiagnosis.setPatientId(1);
+        patientDiagnosis.setPatientDiagnosisId(102);
+        patientDiagnosis.setIsActive("yes");
+        patientDiagnosisList.add(patientDiagnosis);
+
+        patientProcedureList = new ArrayList<>();
+        patientProcedure = new PatientProcedure();
+        patientProcedure.setPatientId(1);
+        patientProcedure.setPatientProcedureId(103);
+        patientDiagnosis.setIsActive("yes");
+        patientProcedureList.add(patientProcedure);
+
+        patientMedicationList = new ArrayList<>();
+        patientMedication = new PatientMedication();
+        patientMedication.setPatientId(1);
+        patientMedication.setPatientMedicationId(104);
+        patientMedication.setIsActive("yes");
+        patientMedicationList.add(patientMedication);
+
+        patientHistoryDto = new PatientHistoryDto();
+        patientHistoryDto.setPatientId(1);
+        patientHistoryDto.setPatientVitalSigns(patientVitalSignsList);
+        patientHistoryDto.setPatientDiagnosis(patientDiagnosisList);
+        patientHistoryDto.setPatientProcedure(patientProcedureList);
+        patientHistoryDto.setPatientMedication(patientMedicationList);
+    }
+
+    @Test
+    void testFetchProedureDetails() {
+        // fail("Not yet implemented");
+        Optional<Procedure> patientOptional = Optional.of(procedure);
+        Mockito.when(procedureRepository.findByProcedureCode("PR0011")).thenReturn(patientOptional);
+        assertThat(patientVisitServiceImpl.fetchProedureDetails("PR0011")).isEqualTo(procedure);
+    }
+
+    @Test
+    void testFetchDiagnosisDetails() {
+        // fail("Not yet implemented");
+        Optional<Diagnosis> diagnosisOptional = Optional.of(diagnosis);
+        Mockito.when(diagnosisRepository.findByDiagnosisCode("DR0011")).thenReturn(diagnosisOptional);
+        assertThat(patientVisitServiceImpl.fetchDiagnosisDetails("DR0011")).isEqualTo(diagnosis);
+    }
+
+    @Test
+    void testFetchMedicationDetails() {
+        // fail("Not yet implemented");
+        Mockito.when(medicationRepository.findByDrugName("Anestecia")).thenReturn(mediationList);
+        assertEquals(1, patientVisitServiceImpl.fetchMedicationDetails("Anestecia").size());
+    }
+
+    @Test
+    void testFetchAllDiagnosisDetails() {
+        // fail("Not yet implemented");
+        Mockito.when(diagnosisRepository.findAll()).thenReturn(diagnosisList);
+        assertEquals(1, patientVisitServiceImpl.fetchAllDiagnosisDetails().size());
+    }
+
+    @Test
+    void testFetchAllMedicationDetailsDetails() {
+        // fail("Not yet implemented");
+        Mockito.when(medicationRepository.findAll()).thenReturn(mediationList);
+        assertEquals(1, patientVisitServiceImpl.fetchAllMedicationDetailsDetails().size());
+    }
+
+    @Test
+    void testFetchAllProedureDetails() {
+        // fail("Not yet implemented");
+        Mockito.when(procedureRepository.findAll()).thenReturn(procedureList);
+        assertEquals(1, patientVisitServiceImpl.fetchAllProedureDetails().size());
+    }
+
+    @Test
+    void testFetchHistory() {
+        // fail("Not yet implemented");
+        Mockito.when(patientVitalSignsRepository.findByPatientId(1)).thenReturn(patientVitalSignsList);
+        Mockito.when(patientDiagnosisRepository.findByPatientId(1)).thenReturn(patientDiagnosisList);
+        Mockito.when(patientProcedureRepository.findByPatientId(1)).thenReturn(patientProcedureList);
+        Mockito.when(patientMedicationRepository.findByPatientId(1)).thenReturn(patientMedicationList);
+
+    }
+
+}

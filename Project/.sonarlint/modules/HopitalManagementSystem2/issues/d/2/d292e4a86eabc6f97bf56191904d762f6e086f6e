@@ -1,0 +1,7 @@
+
+psquid:UselessImportCheck"5Remove this unused import 'com.example.model.Doctor'.(ίσ½Hσ…RMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck"8Remove this unused import 'java.lang.annotation.Native'.(·΅ξ±ύÿÿÿÿHτ…RMINORZ
+CODE_SMELL
+vsquid:UselessImportCheck"6Remove this unused import 'com.example.model.Patient'.( όσ»ÿÿÿÿÿHυ…RMINORZ
+CODE_SMELL

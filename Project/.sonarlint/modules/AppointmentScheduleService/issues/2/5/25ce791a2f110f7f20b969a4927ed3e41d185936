@@ -1,0 +1,39 @@
+
+‘squid:S1488›"[Immediately return this expression instead of assigning it to the temporary variable "msg".(†£¡ñ8ÉİÁ¥0H÷šRMINORZ
+CODE_SMELL
+™squid:S1488‰"^Immediately return this expression instead of assigning it to the temporary variable "phydto".(‘éœ’ùÿÿÿÿ8×Ñ›È¢0HîšRMINORZ
+CODE_SMELL
+Šsquid:S00100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áËò×ıÿÿÿÿ8ÉİÁ¥0HõšRMINORZ
+CODE_SMELL
+s
+squid:S106ˆ"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8×Ñ›È¢0HòšRMAJORZ
+CODE_SMELL
+squid:S1488T"dImmediately return this expression instead of assigning it to the temporary variable "appointments".(´×Â¸ûÿÿÿÿ8ÉİÁ¥0HéšRMINORZ
+CODE_SMELL
+squid:S1488’"bImmediately return this expression instead of assigning it to the temporary variable "patientdto".(˜ı†ÿÿÿÿÿ8×Ñ›È¢0HñšRMINORZ
+CODE_SMELL
+«squid:S1488["qImmediately return this expression instead of assigning it to the temporary variable "displayPatientAppointment".(—Ÿûÿÿÿÿ8×Ñ›È¢0HğšRMINORZ
+CODE_SMELL
+²squid:S1488c"xImmediately return this expression instead of assigning it to the temporary variable "displayPatientAppointmentHistory".(æš¶÷ûÿÿÿÿ8×Ñ›È¢0HóšRMINORZ
+CODE_SMELL
+šsquid:S1488@"fImmediately return this expression instead of assigning it to the temporary variable "allAppointment".(Î ò|8ÉİÁ¥0HïšRMINORZ
+CODE_SMELL
+s
+squid:S106‘"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8×Ñ›È¢0HöšRMAJORZ
+CODE_SMELL
+r
+squid:S106+"9Replace this use of System.out or System.err by a logger.(÷÷¥Åüÿÿÿÿ8×Ñ›È¢0HêšRMAJORZ
+CODE_SMELL
+squid:S1488v"dImmediately return this expression instead of assigning it to the temporary variable "notification".(Ì¨æ¯üÿÿÿÿ8×Ñ›È¢0HëšRMINORZ
+CODE_SMELL
+¤squid:S1488M"oImmediately return this expression instead of assigning it to the temporary variable "displaDoctorAppointment".(º­±8×Ñ›È¢0HøšRMINORZ
+CODE_SMELL
+˜squid:S1488"cImmediately return this expression instead of assigning it to the temporary variable "patientName".(™ëåâ8×Ñ›È¢0HôšRMINORZ
+CODE_SMELL
+›squid:S14889"fImmediately return this expression instead of assigning it to the temporary variable "allAppointment".(ÍÎï8×Ñ›È¢0HíšRMINORZ
+CODE_SMELL
+ªsquid:S1488­"oImmediately return this expression instead of assigning it to the temporary variable "displaDoctorAppointment".(Ë¥ÜÁûÿÿÿÿ8ÉİÁ¥0HùšRMINORZ
+CODE_SMELL
+s
+squid:S106š"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8ÉİÁ¥0HìšRMAJORZ
+CODE_SMELL

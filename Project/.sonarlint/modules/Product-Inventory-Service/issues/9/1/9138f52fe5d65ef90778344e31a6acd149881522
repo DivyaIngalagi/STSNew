@@ -1,0 +1,11 @@
+
+squid:S1488&"_Immediately return this expression instead of assigning it to the temporary variable "allprod".(“™É™H†ÎRMINORZ
+CODE_SMELL
+squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(º‰—ÁşÿÿÿÿH‡ÎRMINORZ
+CODE_SMELL
+‡squid:UselessImportCheck"LRemove this unused import 'io.micrometer.core.ipc.http.HttpSender.Response'.(¢öœ´HˆÎRMINORZ
+CODE_SMELL
+‘squid:UselessImportCheck	"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅşÿÿÿÿH‰ÎRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿHŠÎRMINORZ
+CODE_SMELL

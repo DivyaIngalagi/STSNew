@@ -1,0 +1,25 @@
+
+n
+squid:S106ñ"9Replace this use of System.out or System.err by a logger.(À×ÿè8üÚ’èÃ0H¢•RMAJORZ
+CODE_SMELL
+n
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(ªäô×8ø·âäÃ0H‹•RMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ñ¥ÁúÿÿÿÿHº”RMINORZ
+CODE_SMELL
+squid:S1192Ÿ"HDefine a constant instead of duplicating this literal "Houston" 3 times.(é¬²Â8¦·©äÃ0Hß”RCRITICALZ
+CODE_SMELL
+n
+squid:S106“"9Replace this use of System.out or System.err by a logger.(êìîï8üÚ’èÃ0H£•RMAJORZ
+CODE_SMELL
+esquid:S1135˜"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿH¹”RINFOZ
+CODE_SMELL
+r
+squid:S106A"9Replace this use of System.out or System.err by a logger.(çê±ëúÿÿÿÿ8…Ì§ãÃ0H¼”RMAJORZ
+CODE_SMELL
+r
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Úš¤‘ûÿÿÿÿ8…Ì§ãÃ0H½”RMAJORZ
+CODE_SMELL
+r
+squid:S106="9Replace this use of System.out or System.err by a logger.(ˆê‹¼ùÿÿÿÿ8…Ì§ãÃ0H»”RMAJORZ
+CODE_SMELL

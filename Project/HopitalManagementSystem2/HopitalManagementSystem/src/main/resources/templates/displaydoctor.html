@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient profile</title>
+<style type="text/css">
+body {
+	background-color: olive;
+}
+
+
+</style>
+</head>
+<body>
+<div style="font-size: 20px">
+ <h1>Doctor Details</h1>
+
+	
+	
+	
+	
+	User name: &nbsp; &nbsp; <span th:text="${doc.username}"></span><br/>
+	Password:  &nbsp;&nbsp; <span th:text="${doc.password}"></span><br/>
+	FirstName: &nbsp;&nbsp;  <span th:text="${doc.firstName}"></span><br/>
+	Last Name: &nbsp;&nbsp; <span th:text="${doc.lastName}"></span><br/>
+	Gender: &nbsp;&nbsp;&nbsp;  <span th:text="${doc.gender}"></span><br/>
+	Mobile No: &nbsp;&nbsp; <span th:text="${doc.mobileno}"></span><br/>
+	Email:&nbsp;&nbsp; &nbsp;&nbsp;  <span th:text="${doc.email}"></span><br/>
+	Address: &nbsp;&nbsp;  <span th:text="${doc.address}"></span><br/>
+	City: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <span th:text="${doc.city}"></span><br/>
+	Qualification:&nbsp;&nbsp; <span th:text="${doc.qualification}"></span><br/>
+	Specialization:&nbsp;&nbsp;<span th:text="${doc.specializaton}"></span><br/>
+	
+
+
+</div>
+
+
+ 
+</body>
+</html>

@@ -1,0 +1,72 @@
+
+lsquid:S1135Ğ"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8äôïêÂ0HÂ–RINFOZ
+CODE_SMELL
+r
+squid:S106T"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Œğ¤èÂ0HÊ–RMAJORZ
+CODE_SMELL
+tsquid:S2696¸"6Make the enclosing method "static" or remove this set.(€ÿ±×üÿÿÿÿ8¨û†îÂ0Hà–RCRITICALZ
+CODE_SMELL
+lsquid:S1135¾"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Ãä™ïÂ0HÌ–RINFOZ
+CODE_SMELL
+lsquid:S1135£"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8¡ª§îÂ0HÓ–RINFOZ
+CODE_SMELL
+ysquid:S2259é"EA "NullPointerException" could be thrown; "current" is nullable here.(ÙÔ³Îøÿÿÿÿ8¨û†îÂ0HÁ–RMAJORZBUG
+r
+squid:S106K"9Replace this use of System.out or System.err by a logger.(ˆê‹¼ùÿÿÿÿ8İÜçÂ0HÛ–RMAJORZ
+CODE_SMELL
+tsquid:UnusedPrivateMethod½"0Remove this unused private "deleteStart" method.(ôĞô˜8ñó±ïÂ0Hß–RMAJORZ
+CODE_SMELL
+tsquid:S2696Å"6Make the enclosing method "static" or remove this set.(‘¡–òùÿÿÿÿ8Ÿœ£îÂ0HÔ–RCRITICALZ
+CODE_SMELL
+ksquid:S11352"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ß°ŞéÂ0HÕ–RINFOZ
+CODE_SMELL
+`squid:S1659Ú"%Declare "current" on a separate line.(¹Ó§½şÿÿÿÿ8¨û†îÂ0HÄ–RMINORZ
+CODE_SMELL
+zsquid:UnusedPrivateMethodö"1Remove this unused private "addBeginning" method.(¹°ô¾úÿÿÿÿ8¹ÒğÂ0HÀ–RMAJORZ
+CODE_SMELL
+r
+squid:S106N"9Replace this use of System.out or System.err by a logger.(øÆÔùÿÿÿÿ8Âä†çÂ0HŞ–RMAJORZ
+CODE_SMELL
+zsquid:UnusedPrivateMethod"1Remove this unused private "deleteMiddle" method.(ÿ«“ëûÿÿÿÿ8“ŠğÂ0HÍ–RMAJORZ
+CODE_SMELL
+ysquid:UnusedPrivateMethod1"6Remove this unused private "reverseLinkedList" method.(’ôŞ²8¤·ıëÂ0Hİ–RMAJORZ
+CODE_SMELL
+ssquid:S2696C"6Make the enclosing method "static" or remove this set.(´“×Íûÿÿÿÿ8¯§ÿëÂ0HÉ–RCRITICALZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ñ¥ÁúÿÿÿÿHÃ–RMINORZ
+CODE_SMELL
+tsquid:S2696ú"6Make the enclosing method "static" or remove this set.(ˆèÛÿÿÿÿÿ8Ÿœ£îÂ0HÇ–RCRITICALZ
+CODE_SMELL
+lsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÆÖ–îÂ0HÚ–RINFOZ
+CODE_SMELL
+psquid:UnusedPrivateMethodï",Remove this unused private "addLast" method.(¥ˆ»º8¹ÒğÂ0HÒ–RMAJORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(®í†¥ÿÿÿÿÿ8“ŠğÂ0HÎ–RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLinec"<This block of commented-out lines of code should be removed.(Ääæøÿÿÿÿ8ËúˆèÂ0HÅ–RMAJORZ
+CODE_SMELL
+r
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(ğ•­¹úÿÿÿÿ8İÜçÂ0HÑ–RMAJORZ
+CODE_SMELL
+nsquid:S1854"8Remove this useless assignment to local variable "temp".(œ¯¥³8¼ŠøïÂ0HÏ–RMAJORZ
+CODE_SMELL
+ssquid:S2696#"6Make the enclosing method "static" or remove this set.(ˆèÛÿÿÿÿÿ8¯§ÿëÂ0HĞ–RCRITICALZ
+CODE_SMELL
+tsquid:S2696Õ"6Make the enclosing method "static" or remove this set.(ˆèÛÿÿÿÿÿ8ÚÇÇîÂ0H×–RCRITICALZ
+CODE_SMELL
+†squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ìœ¶Öüÿÿÿÿ8¹ÒğÂ0HÆ–RMAJORZ
+CODE_SMELL
+tsquid:S2696Ê"6Make the enclosing method "static" or remove this set.(€ÿ±×üÿÿÿÿ8¯§ÿëÂ0HÙ–RCRITICALZ
+CODE_SMELL
+tsquid:S2259"EA "NullPointerException" could be thrown; "current" is nullable here.(ñ—É’8ŠÌ¯ïÂ0HÈ–RMAJORZBUG
+lsquid:S1135÷"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8¨û†îÂ0HË–RINFOZ
+CODE_SMELL
+xsquid:UnusedPrivateMethod¢"/Remove this unused private "deleteLast" method.(“ğÀÎüÿÿÿÿ8ñó±ïÂ0H¿–RMAJORZ
+CODE_SMELL
+m
+squid:S106_"9Replace this use of System.out or System.err by a logger.(ñ°ˆµ8İÜçÂ0HÜ–RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(…ÉÜ€8¹ÒğÂ0HÖ–RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(¹äã8ËúˆèÂ0HØ–RMAJORZ
+CODE_SMELL

@@ -1,0 +1,38 @@
+package com.impact.project.serviceimpl;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.repo.NurseRepo;
+
+@ExtendWith(MockitoExtension.class)
+class NurseServiceImplTest {
+
+    @Mock
+    private NurseRepo nurseRepo;
+
+    @InjectMocks
+    private NurseServiceImpl nurseServieImpl;
+
+    @Test
+    void testUpdateNurse() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAllNursesDetails() {
+        // fail("Not yet implemented");
+
+    }
+
+    @Test
+    void testGetNurseById() {
+        fail("Not yet implemented");
+    }
+
+}

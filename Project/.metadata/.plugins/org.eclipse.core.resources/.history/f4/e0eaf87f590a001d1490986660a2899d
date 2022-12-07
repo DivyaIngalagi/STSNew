@@ -1,0 +1,14 @@
+package com.impact.project;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class UserManagmentApplicationTest {
+
+    @Test
+    void test() {
+        fail("Not yet implemented");
+    }
+
+}

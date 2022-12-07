@@ -1,0 +1,36 @@
+package com.impact.project.serviceImpl;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.model.Slot;
+import com.impact.project.repository.SlotRepo;
+
+@ExtendWith(MockitoExtension.class)
+class SlotServiceImplTest {
+
+    @Mock
+    private SlotRepo slotRepo;
+
+    @InjectMocks
+    private SlotServiceImpl slotServiceImpl;
+    
+    Slot slot;
+
+    @BeforeEach
+    public void setUp() {
+        
+    }
+
+    @Test
+    void testSaveSlot() {
+        // fail("Not yet implemented");
+        Mockito.when(slotRepo.save(entity))
+    }
+
+}

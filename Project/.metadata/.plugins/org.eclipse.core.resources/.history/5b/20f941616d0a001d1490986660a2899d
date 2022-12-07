@@ -1,0 +1,13 @@
+package com.impact.project.serviceImpl;
+
+import org.junit.jupiter.api.Test;
+
+class AllergyServiceImplTest {
+
+    @Test
+    void testGetAllergybyId() {
+        // fail("Not yet implemented");
+
+    }
+
+}

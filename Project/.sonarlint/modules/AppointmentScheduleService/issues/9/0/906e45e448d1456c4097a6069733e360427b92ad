@@ -1,0 +1,77 @@
+
+—squid:S1488Â"\Immediately return this expression instead of assigning it to the temporary variable "name".(§ÔžÆýÿÿÿÿ8ˆÛ ·¢0HúšRMINORZ
+CODE_SMELL
+|squid:S1192E"FDefine a constant instead of duplicating this literal "Admin" 8 times.(€¡öéúÿÿÿÿHûšRCRITICALZ
+CODE_SMELL
+€squid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(¿ðÔ8Êá‹Ÿ0HüšRMAJORZ
+CODE_SMELL
+dsquid:S1125ë")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8¿ôÂ¦¡0HýšRMINORZ
+CODE_SMELL
+dsquid:S1125¤")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8Ïºë­¨0HþšRMINORZ
+CODE_SMELL
+r
+squid:S106;"9Replace this use of System.out or System.err by a logger.(‘€ìòøÿÿÿÿ8ˆÛ ·¢0HÿšRMAJORZ
+CODE_SMELL
+m
+squid:S106P"9Replace this use of System.out or System.err by a logger.(âç¥Í8ˆÛ ·¢0H€›RMAJORZ
+CODE_SMELL
+csquid:S3655¾"6Call "appoint.isPresent()" before accessing the value.(íÁûÈþÿÿÿÿH›RMAJORZBUG
+esquid:S3655¨"=Call "appScheduleGet.isPresent()" before accessing the value.(Þ˜¢¥H‚›RMAJORZBUG
+r
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(Ø§Ðõûÿÿÿÿ8ˆÛ ·¢0Hƒ›RMAJORZ
+CODE_SMELL
+lsquid:S1135à"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8Ïºë­¨0H„›RINFOZ
+CODE_SMELL
+s
+squid:S106Ú"9Replace this use of System.out or System.err by a logger.(«ã¦¾ùÿÿÿÿ8ˆÛ ·¢0H…›RMAJORZ
+CODE_SMELL
+‡squid:S1192„"IDefine a constant instead of duplicating this literal "accepted" 3 times.(î¦Âœúÿÿÿÿ8Ïºë­¨0H†›RCRITICALZ
+CODE_SMELL
+squid:CommentedOutCodeLineÈ"<This block of commented-out lines of code should be removed.(—“Æþ8…›Î‡Ÿ0H‡›RMAJORZ
+CODE_SMELL
+dsquid:S1125‡")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8ˆÛ ·¢0Hˆ›RMINORZ
+CODE_SMELL
+qsquid:S3655®"DCall "appointScheduleDelete.isPresent()" before accessing the value.(‰È•ÍúÿÿÿÿH‰›RMAJORZBUG
+dsquid:S1125Œ")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8ˆÛ ·¢0HŠ›RMINORZ
+CODE_SMELL
+`squid:S3655V"9Call "slotMaster.isPresent()" before accessing the value.(Òú›ÂH‹›RMAJORZBUG
+dsquid:S3655ô"6Call "slotObj.isPresent()" before accessing the value.(¨ì8ˆÛ ·¢0HŒ›RMAJORZBUG
+dsquid:S1125æ")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8Ïºë­¨0H›RMINORZ
+CODE_SMELL
+“squid:S1488¼"]Immediately return this expression instead of assigning it to the temporary variable "nList".(ÑÒ—‘8ˆÛ ·¢0HŽ›RMINORZ
+CODE_SMELL
+m
+squid:S106v"9Replace this use of System.out or System.err by a logger.(ÆÀûý8ˆÛ ·¢0H›RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(•³¬«8‘™ÑŸ0H›RMAJORZ
+CODE_SMELL
+s
+squid:S106Ï"9Replace this use of System.out or System.err by a logger.(µ­îúüÿÿÿÿ8ˆÛ ·¢0H‘›RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(—“Æþ8®€Õ‡Ÿ0H’›RMAJORZ
+CODE_SMELL
+m
+squid:S106R"9Replace this use of System.out or System.err by a logger.(„ŒèÃ8Ïºë­¨0H“›RMAJORZ
+CODE_SMELL
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áÐÙÞH”›RMINORZ
+CODE_SMELL
+s
+squid:S106˜"9Replace this use of System.out or System.err by a logger.(Í†·‹ûÿÿÿÿ8Ïºë­¨0H•›RMAJORZ
+CODE_SMELL
+squid:S1192J"GDefine a constant instead of duplicating this literal "booked" 3 times.(©¿8Ïºë­¨0H–›RCRITICALZ
+CODE_SMELL
+r
+squid:S106x"9Replace this use of System.out or System.err by a logger.(Í†·‹ûÿÿÿÿ8Ïºë­¨0H—›RMAJORZ
+CODE_SMELL
+†squid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(¡Â´¢ùÿÿÿÿ8Êá‹Ÿ0H˜›RMAJORZ
+CODE_SMELL
+csquid:S1125l")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8ˆÛ ·¢0H™›RMINORZ
+CODE_SMELL
+r
+squid:S106T"9Replace this use of System.out or System.err by a logger.(Ô°”üÿÿÿÿ8Ïºë­¨0Hš›RMAJORZ
+CODE_SMELL
+dsquid:S1125ˆ")Remove the literal "false" boolean value.(åÕµãúÿÿÿÿ8Ïºë­¨0H››RMINORZ
+CODE_SMELL
+n
+squid:S106–"9Replace this use of System.out or System.err by a logger.(ÆÀûý8ˆÛ ·¢0Hœ›RMAJORZ
+CODE_SMELL

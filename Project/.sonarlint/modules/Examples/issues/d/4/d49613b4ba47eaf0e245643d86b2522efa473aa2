@@ -1,0 +1,16 @@
+
+dsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHŒšRINFOZ
+CODE_SMELL
+rsquid:S1197"8Move the array designator from the variable to the type.(¨°ˆÉüÿÿÿÿ8ÈÇì‰©0H‹šRMINORZ
+CODE_SMELL
+isquid:S1066"/Merge this if statement with the enclosing one.(à˜……ÿÿÿÿÿ8ùŠí’Ã0HšRMAJORZ
+CODE_SMELL
+Hsquid:S1220""Move this file to a named package.HˆšRMINORZ
+CODE_SMELL
+r
+squid:S106
+"9Replace this use of System.out or System.err by a logger.(àÕêåşÿÿÿÿ8¶Àê¿0HŠšRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(ööóı8ÈÇì‰©0H‰šRMAJORZ
+CODE_SMELL

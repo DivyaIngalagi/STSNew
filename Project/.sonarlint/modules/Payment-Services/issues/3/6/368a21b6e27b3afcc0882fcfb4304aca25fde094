@@ -1,0 +1,7 @@
+
+’squid:UselessImportCheck"WRemove this unused import 'org.springframework.cloud.client.loadbalancer.LoadBalanced'.(Éâ¦‡H‘€RMINORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"HRemove this unused import 'org.springframework.context.annotation.Bean'.(‚î‰ÞH’€RMINORZ
+CODE_SMELL
+ˆsquid:UselessImportCheck"HRemove this unused import 'org.springframework.web.client.RestTemplate'.(Îö¼ÞûÿÿÿÿH“€RMINORZ
+CODE_SMELL

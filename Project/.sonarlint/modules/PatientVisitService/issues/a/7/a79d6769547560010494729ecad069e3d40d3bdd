@@ -1,0 +1,5 @@
+
+rsquid:UselessImportCheck"8Remove this unused import 'javax.persistence.OneToMany'.(«õù;H±óRMINORZ
+CODE_SMELL
+—squid:UselessImportCheck"WRemove this unused import 'org.springframework.data.repository.query.parser.Part.Type'.(úÑ—èüÿÿÿÿH²óRMINORZ
+CODE_SMELL

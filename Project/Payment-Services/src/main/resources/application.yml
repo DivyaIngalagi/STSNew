@@ -1,0 +1,29 @@
+server:
+  port: 8282
+  
+spring: 
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/db
+    username: sa
+    password:   
+    
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true     
+#with pom annotation and application.yml we register    
+  eureka:
+   client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+     defaultZone: http://localhost:8761/eureka
+   instance:
+     hostname:localhost
+     
+  application:
+    name: PAYMENT-SERVICES

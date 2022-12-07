@@ -1,0 +1,51 @@
+
+q"squid:SwitchLastCaseIsDefaultCheckD""Add a default case to this switch.(¨ÕÉ8©Ù¦Ò¸0H€…RCRITICALZ
+CODE_SMELL
+r
+squid:S106S"9Replace this use of System.out or System.err by a logger.(°ı¥üùÿÿÿÿ8Õ˜ğ¸0H•…RMAJORZ
+CODE_SMELL
+dsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿHº„RINFOZ
+CODE_SMELL
+€squid:CommentedOutCodeLine\"<This block of commented-out lines of code should be removed.(³ö­8‹£ñ¸0H¹…RMAJORZ
+CODE_SMELL
+l
+squid:S106A"9Replace this use of System.out or System.err by a logger.(İ±Øi8Õ˜ğ¸0H™…RMAJORZ
+CODE_SMELL
+m
+squid:S106("9Replace this use of System.out or System.err by a logger.(¨ÆçĞ8©Ù¦Ò¸0H…RMAJORZ
+CODE_SMELL
+€squid:S1301D"KReplace this "switch" statement by "if" statements to increase readability.(¨ÕÉ8©Ù¦Ò¸0Hş„RMINORZ
+CODE_SMELL
+r
+squid:S1062"9Replace this use of System.out or System.err by a logger.(è¾ãÒùÿÿÿÿ8©Ù¦Ò¸0Hœ…RMAJORZ
+CODE_SMELL
+~squid:S2259W"Q"NullPointerException" will be thrown when invoking method "checkIsExistedJob()".(­¤ø+8áöñ¸0H¶…RMAJORZBUG
+r
+squid:S106I"9Replace this use of System.out or System.err by a logger.(ˆ¢Ûßüÿÿÿÿ8Õ˜ğ¸0H—…RMAJORZ
+CODE_SMELL
+^squid:S1659Z")Declare "totalProfit" on a separate line.(§üï8ƒœÿï¸0H²…RMINORZ
+CODE_SMELL
+m
+squid:S106>"9Replace this use of System.out or System.err by a logger.(±­Ñ8Õ˜ğ¸0H”…RMAJORZ
+CODE_SMELL
+m
+squid:S106?"9Replace this use of System.out or System.err by a logger.(£§“Ş8»­Àğ¸0H¨…RMAJORZ
+CODE_SMELL
+m
+squid:S106L"9Replace this use of System.out or System.err by a logger.(›¦Æ8Õ˜ğ¸0H“…RMAJORZ
+CODE_SMELL
+squid:S37769"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Âˆİçıÿÿÿÿ8áöñ¸0H´…RCRITICALZ
+CODE_SMELL
+m
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Óï…Ü8ŸÃÏğ¸0H¬…RMAJORZ
+CODE_SMELL
+r
+squid:S106-"9Replace this use of System.out or System.err by a logger.(€°ü£ıÿÿÿÿ8Òµ©ñ¸0H¼…RMAJORZ
+CODE_SMELL
+|squid:S2259S"IA "NullPointerException" could be thrown; "selectedJob" is nullable here.(°ı¥üùÿÿÿÿ8áöñ¸0Hµ…RMAJORZBUG
+m
+squid:S106@"9Replace this use of System.out or System.err by a logger.(È©ƒ«8Õ˜ğ¸0H±…RMAJORZ
+CODE_SMELL
+m
+squid:S106e"9Replace this use of System.out or System.err by a logger.(ÆÀûı8’Ñùó¸0HÈ…RMAJORZ
+CODE_SMELL

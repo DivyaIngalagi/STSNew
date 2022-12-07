@@ -1,0 +1,36 @@
+server:
+  port: 9001
+  
+  
+spring: 
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://IMCUBCP237-BLL\\SQLEXPRESS:57651;databaseName=onlineshopping
+    username: sa
+    password: password_123  
+#    
+  jpa:
+   show-sql: true
+   hibernate:
+      dialect: org.hibernate.dialect.SQLServerDialect
+      ddl-auto: update
+
+
+#       
+  application:
+    name: INVENTORY-SERVICE
+    
+#eureka:
+#   client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    serviceUrl:
+#     defaultZone: http://localhost:8761/eureka
+#   instance:
+#     hostname:localhost
+    
+     
+  

@@ -1,0 +1,11 @@
+
+Osquid:S1643"Use a StringBuilder instead.(”þßÕúÿÿÿÿHÑ…RMINORZ
+CODE_SMELL
+Osquid:S1643"Use a StringBuilder instead.(Òê†ÕþÿÿÿÿHÒ…RMINORZ
+CODE_SMELL
+f
+squid:S106"9Replace this use of System.out or System.err by a logger.(þûœöHÓ…RMAJORZ
+CODE_SMELL
+f
+squid:S106 "9Replace this use of System.out or System.err by a logger.(Ò•¹—HÔ…RMAJORZ
+CODE_SMELL

@@ -1,0 +1,24 @@
+
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ã‚ÀËÿÿÿÿÿ8»²²¼§0H®šRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(²æ·½8¿–³Ó½0H¯šRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ãÓ™ÿÿÿÿÿ8¿–³Ó½0H°šRMAJORZ
+CODE_SMELL
+Hsquid:S1220""Move this file to a named package.H±šRMINORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ãÓ™ÿÿÿÿÿ8ã®º¼§0H²šRMAJORZ
+CODE_SMELL
+rsquid:S1854'"8Remove this useless assignment to local variable "obj2".(‚¶½îûÿÿÿÿ8Òú¶Ó½0H³šRMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(–ÔÁı8Òú¶Ó½0H´šRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(²æ·½8»²²¼§0HµšRMAJORZ
+CODE_SMELL
+csquid:S1481'")Remove this unused "obj2" local variable.(‚¶½îûÿÿÿÿ8Òú¶Ó½0H¶šRMINORZ
+CODE_SMELL

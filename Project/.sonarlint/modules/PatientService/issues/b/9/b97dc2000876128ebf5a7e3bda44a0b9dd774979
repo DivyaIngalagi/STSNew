@@ -1,0 +1,69 @@
+
+squid:S1192ò"VDefine a constant instead of duplicating this literal "                }\r\n" 6 times.(øÉ«ëúÿÿÿÿHÉûRCRITICALZ
+CODE_SMELL
+†squid:S1192Ö"ODefine a constant instead of duplicating this literal "        },\r\n" 4 times.(Í´¬™ûÿÿÿÿHÊûRCRITICALZ
+CODE_SMELL
+œsquid:S1192å"eDefine a constant instead of duplicating this literal "            \"appointmentId\": 2\r\n" 3 times.(õşº¡ıÿÿÿÿHËûRCRITICALZ
+CODE_SMELL
+¡squid:S1192É"pDefine a constant instead of duplicating this literal "            \"lastUpdatedBy\": \"Dr. Roy\",\r\n" 4 times.(¨ãâzHÌûRCRITICALZ
+CODE_SMELL
+l
+squid:S106’"9Replace this use of System.out or System.err by a logger.(ÒÏ™±ÿÿÿÿÿHÍûRMAJORZ
+CODE_SMELL
+squid:S1192ï"WDefine a constant instead of duplicating this literal "                },\r\n" 6 times.(ë—ğñşÿÿÿÿHÎûRCRITICALZ
+CODE_SMELL
+…squid:S1192å"NDefine a constant instead of duplicating this literal "        }\r\n" 4 times.(õşº¡ıÿÿÿÿHÏûRCRITICALZ
+CODE_SMELL
+squid:S1192È"fDefine a constant instead of duplicating this literal "            \"isDeleted\": \"N\",\r\n" 8 times.(¬œõÃøÿÿÿÿHĞûRCRITICALZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÒÏ™±ÿÿÿÿÿHÑûRMAJORZ
+CODE_SMELL
+Šsquid:S1192ó"SDefine a constant instead of duplicating this literal "            ],\r\n" 6 times.(£ˆÀ¨ÿÿÿÿÿHÒûRCRITICALZ
+CODE_SMELL
+šsquid:S1192Ë"cDefine a constant instead of duplicating this literal "            \"patientId\": 30,\r\n" 7 times.(öÓĞ’ùÿÿÿÿHÓûRCRITICALZ
+CODE_SMELL
+œsquid:S1192È"eDefine a constant instead of duplicating this literal "            \"isActive\": \"T\",\r\n" 8 times.(¬œõÃøÿÿÿÿHÔûRCRITICALZ
+CODE_SMELL
+œsquid:S1192Ö"eDefine a constant instead of duplicating this literal "            \"appointmentId\": 1\r\n" 5 times.(Í´¬™ûÿÿÿÿHÕûRCRITICALZ
+CODE_SMELL
+šsquid:S1192Ê"hDefine a constant instead of duplicating this literal "            \"lastUpadteOn\": null,\r\n" 8 times.(òîÏ®HÖûRCRITICALZ
+CODE_SMELL
+…squid:S1192Ç"NDefine a constant instead of duplicating this literal "        {\r\n" 7 times.(°Â¯ÂúÿÿÿÿH×ûRCRITICALZ
+CODE_SMELL
+‚squid:S1192å"KDefine a constant instead of duplicating this literal "    ],\r\n" 3 times.(õşº¡ıÿÿÿÿHØûRCRITICALZ
+CODE_SMELL
+œsquid:S1192Ë"eDefine a constant instead of duplicating this literal "            \"createdOn\": null,\r\n" 8 times.(öÓĞ’ùÿÿÿÿHÙûRCRITICALZ
+CODE_SMELL
+squid:S1192Ê"lDefine a constant instead of duplicating this literal "            \"createdBy\": \"Dr. Roy\",\r\n" 4 times.(òîÏ®HÚûRCRITICALZ
+CODE_SMELL
+Ÿsquid:S1192Ù"mDefine a constant instead of duplicating this literal "            \"createdBy\": \"Dr. Roy2\",\r\n" 4 times.(‹íÜûHÛûRCRITICALZ
+CODE_SMELL
+¨squid:S1192Ø"qDefine a constant instead of duplicating this literal "            \"lastUpdatedBy\": \"Dr. Roy2\",\r\n" 4 times.(ó—’ÒúÿÿÿÿHÜûRCRITICALZ
+CODE_SMELL
+’squid:S1488·"cImmediately return this expression instead of assigning it to the temporary variable "patientList".(¦ØƒõHİûRMINORZ
+CODE_SMELL
+k
+squid:S106h"9Replace this use of System.out or System.err by a logger.(Œ—şùÿÿÿÿHŞûRMAJORZ
+CODE_SMELL
+‰squid:S1192ë"WDefine a constant instead of duplicating this literal "                {\r\n" 12 times.(¼‚ü¦HßûRCRITICALZ
+CODE_SMELL
+…squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(şÅñ®üÿÿÿÿ8¹Õù­¨0HàûRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine?"<This block of commented-out lines of code should be removed.(‡íµ÷ÿÿÿÿÿ8¹Õù­¨0HáûRMAJORZ
+CODE_SMELL
+m
+squid:S1063"9Replace this use of System.out or System.err by a logger.(ôâÌ8¹Õù­¨0HâûRMAJORZ
+CODE_SMELL
+r
+squid:S1066"9Replace this use of System.out or System.err by a logger.(ñ¿Ù¥ûÿÿÿÿ8¹Õù­¨0HãûRMAJORZ
+CODE_SMELL
+r
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ËÆûÂúÿÿÿÿ8¹Õù­¨0HäûRMAJORZ
+CODE_SMELL
+m
+squid:S106K"9Replace this use of System.out or System.err by a logger.(úö‚”8¹Õù­¨0HåûRMAJORZ
+CODE_SMELL
+r
+squid:S106q"9Replace this use of System.out or System.err by a logger.(ÿ¨É¥üÿÿÿÿ8¹Õù­¨0HæûRMAJORZ
+CODE_SMELL

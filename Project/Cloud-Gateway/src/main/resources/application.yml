@@ -1,0 +1,31 @@
+#Route to particular services need url and also has to register with eureka server
+#with pom annotation and application.yml we register    
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: Order-Service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order/**
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: order-service
+#                fallbackuri: forward:/orderFallback
+
+        - id: Payment-Services
+          uri: lb://PAYMENT-SERVICES
+          predicates:
+            - Path=/payment/**
+
+#          filters:
+#            - name: CircuitBreaker
+#              args:
+#                name: payment-service
+#                fallbackuri: forward:/paymentFallback
+
+server:
+  port: 8989

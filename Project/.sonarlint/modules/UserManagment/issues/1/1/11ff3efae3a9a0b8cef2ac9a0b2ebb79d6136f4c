@@ -1,0 +1,47 @@
+
+[squid:S11259"(Remove the literal "true" boolean value.(‹ˆœªûÿÿÿÿH÷˜RMINORZ
+CODE_SMELL
+ksquid:CallToDeprecatedMethodF",Remove this use of "Date"; it is deprecated.(Š°âïHø˜RMINORZ
+CODE_SMELL
+f
+squid:S106h"9Replace this use of System.out or System.err by a logger.(ÐÀ¯ÝHù˜RMAJORZ
+CODE_SMELL
+’squid:S1488ø"cImmediately return this expression instead of assigning it to the temporary variable "updatedUser".(ª”©ïHú˜RMINORZ
+CODE_SMELL
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(áÐÙÞHû˜RMINORZ
+CODE_SMELL
+zsquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(½ÚÉ¾Hü˜RMAJORZ
+CODE_SMELL
+`squid:S3655¬"3Call "user.isPresent()" before accessing the value.(¨ŸûÿÿÿÿHý˜RMAJORZBUG
+~squid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(Ôé³ûÿÿÿÿHþ˜RMAJORZ
+CODE_SMELL
+`squid:S3655"3Call "user.isPresent()" before accessing the value.(¨ŸûÿÿÿÿHÿ˜RMAJORZBUG
+n
+squid:S106¨"9Replace this use of System.out or System.err by a logger.(ñ…œœ8ÑþÕ÷¾0H€™RMAJORZ
+CODE_SMELL
+n
+squid:S106µ"9Replace this use of System.out or System.err by a logger.(æŸ¢¥8ÑþÕ÷¾0H™RMAJORZ
+CODE_SMELL
+`squid:S3655"3Call "user.isPresent()" before accessing the value.(¥èàåþÿÿÿÿH‚™RMAJORZBUG
+_squid:S3655f"3Call "user.isPresent()" before accessing the value.(ÀßÝ©ûÿÿÿÿHƒ™RMAJORZBUG
+n
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(Õ³èŽ8ÑþÕ÷¾0H„™RMAJORZ
+CODE_SMELL
+bsquid:S3655¨"3Call "user.isPresent()" before accessing the value.(ñ…œœ8ÑþÕ÷¾0H…™RMAJORZBUG
+`squid:S3655˜"3Call "user.isPresent()" before accessing the value.(¨ŸûÿÿÿÿH†™RMAJORZBUG
+psquid:CallToDeprecatedMethodD",Remove this use of "Date"; it is deprecated.(¢©ñºýÿÿÿÿH‡™RMINORZ
+CODE_SMELL
+Zsquid:S3655"3Call "user.isPresent()" before accessing the value.(ù£¡ÅHˆ™RMAJORZBUG
+_squid:S3655t"3Call "user.isPresent()" before accessing the value.(ÀßÝ©ûÿÿÿÿH‰™RMAJORZBUG
+[squid:S1125I"(Remove the literal "true" boolean value.(œ·¸ùÿÿÿÿHŠ™RMINORZ
+CODE_SMELL
+k
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ÜÕõþÿÿÿÿH‹™RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine¤"<This block of commented-out lines of code should be removed.(Ôé³ûÿÿÿÿHŒ™RMAJORZ
+CODE_SMELL
+`squid:S3655œ"3Call "user.isPresent()" before accessing the value.(ûÓ÷ÑÿÿÿÿÿH™RMAJORZBUG
+g
+squid:S106Ð"9Replace this use of System.out or System.err by a logger.(ëØâÔHŽ™RMAJORZ
+CODE_SMELL
+]squid:S2201Y"/The return value of "orElseThrow" must be used.(Ù»¾Ž8Šˆ–­Æ0H™RMAJORZBUG

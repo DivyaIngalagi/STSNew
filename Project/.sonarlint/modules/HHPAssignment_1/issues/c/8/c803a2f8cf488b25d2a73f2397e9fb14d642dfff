@@ -1,0 +1,6 @@
+
+^squid:S1452	"&Remove usage of generic wildcard type.(®ÐŠõ8Íé¥Æ¸0H­‚RCRITICALZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(õ¯²¾8€ÒŸÆ¸0H¬‚RMAJORZ
+CODE_SMELL

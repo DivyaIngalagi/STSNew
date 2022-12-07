@@ -1,0 +1,25 @@
+#server:
+#  port: 8282
+#  
+#spring:
+#  application:
+#    name: APPOINTMENT-SCHEDULE-CLOUD-GATEWAY
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: APPOINTMENT-SCHEDULE-SERVICE
+#          uri: lb://APPOINTMENT-SCHEDULE-SERVICE
+#          predicates:
+#             - Path=/appointmentschedule/**
+#        
+#
+#eureka:
+#   client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    serviceUrl:
+#     defaultZone: http://localhost:8181/eureka
+#   instance:
+#     hostname:localhost
+#
+#     

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form  action="#" th:action="@{/register}" method="post" th:object="${custObj}">
+<label>CustomerId:</label>
+<input type="text" th:field="*{id}"> <br>
+<label>CustomerName:</label>
+<input type="text" th:field="*{custName}"><br>
+<label>CustomerAddress:</label>
+<input type="text" th:field="*{address}">
+<label>CustomerAge:</label>
+<input type="text" th:field="*{age}">
+
+<button type="submit">DoRegisteration</button>
+</form>
+</body>
+</html>

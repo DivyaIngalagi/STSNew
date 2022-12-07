@@ -1,0 +1,80 @@
+package com.impact.project.serviceImpl;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.model.Patient;
+import com.impact.project.repository.PatientRepo;
+
+@ExtendWith(MockitoExtension.class)
+class PatientServiceImplTest {
+
+    @Mock
+    private PatientRepo patientRepo;
+
+    @InjectMocks
+    private PatientServiceImpl patientServiceImpl;
+
+    Patient patientObj;
+
+    List<Patient> patientList;
+
+    @BeforeEach()
+
+    public void setUp() {
+        patientList = new ArrayList<>();
+
+        patientObj = new Patient();
+        patientObj.setPatientId(1);
+        patientObj.setPatientFirstName("Sheetal");
+        patientObj.setUserId(1);
+        patientList.add(patientObj);
+    }
+
+    @Test
+    void testSavePatient() {
+        // fail("Not yet implemented");
+        Mockito.when(patientRepo.save(patientObj)).thenReturn(patientObj);
+        assertThat(patientServiceImpl.savePatient(patientObj)).isNotNull();
+    }
+
+    @Test
+    void testGetAllPatient() {
+        // fail("Not yet implemented");
+        Mockito.when(patientRepo.findAll()).thenReturn(patientList);
+        assertEquals(1, patientServiceImpl.getAllPatient().size());
+    }
+
+    //
+    @Test
+    void testGetPatientById() {
+        // fail("Not yet implemented");
+        Optional<Patient> patientOptional = Optional.of(patientObj);
+        Mockito.when(patientRepo.findById(1)).thenReturn(patientOptional);
+        assertThat(patientServiceImpl.getPatientById(1)).isEqualTo(patientObj);
+    }
+
+    //
+    @Test
+    void testGetPatientName() {
+//        fail("Not yet implemented");
+    }
+    //
+    // @Test
+    // void testGetPatientListById() {
+    // fail("Not yet implemented");
+    // }
+
+}

@@ -1,0 +1,72 @@
+package com.impact.project.serviceImpl;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.dto.UserDto;
+import com.impact.project.entity.User;
+import com.impact.project.mapper.UserDtoMapper;
+import com.impact.project.repository.UserRepository;
+
+@ExtendWith(MockitoExtension.class)
+class UserServiceImplTest {
+
+    @Mock
+    private UserRepository userRepository;
+
+    @InjectMocks
+    private UserServiceImpl userviceImpl;
+
+    @Mock
+    private UserDtoMapper userDtoToMapper;
+
+    List<User> userList;
+
+    List<UserDto> userDtoList;
+
+    @BeforeEach
+    public void setUp() {
+        userList = new ArrayList<>();
+        User userDto = new User();
+        userDto.setFirstName("Guru");
+        userDto.setLastName("N");
+        userList.add(userDto);
+
+        User userDto1 = new User();
+        userDto1.setFirstName("Prashant");
+        userDto1.setLastName("N");
+        userList.add(userDto1);
+
+        userDtoList = new ArrayList<>();
+        UserDto userDto2 = new UserDto();
+        userDto2.setFirstName("Guru");
+        userDto2.setLastName("N");
+
+        UserDto userDto3 = new UserDto();
+        userDto3.setFirstName("Prashant");
+        userDto3.setLastName("N");
+        userDtoList.add(userDto2);
+        userDtoList.add(userDto3);
+
+    }
+
+    @Test
+    void testGetAllUsers() {
+        // fail("Not yet implemented");
+        Mockito.when(userRepository.findAll()).thenReturn(userList);
+        Mockito.when(userDtoToMapper.getUserDtos(userList)).thenReturn(userList);
+        assertEquals(2, userServiceImpl.getAllUsers().size());
+    }
+    //
+
+}

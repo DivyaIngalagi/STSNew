@@ -1,0 +1,13 @@
+
+Hsquid:S1220""Move this file to a named package.H¨šRMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Æšµ‚ÿÿÿÿÿ8ýïÇ§0H©šRMAJORZ
+CODE_SMELL
+ksquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ýïÇ§0HªšRINFOZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8ž‡ôÇ§0H«šRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine
+"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ýïÇ§0H¬šRMAJORZ
+CODE_SMELL

@@ -1,0 +1,46 @@
+package com.impact.project.serviceImpl;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.impact.project.model.Allergy;
+import com.impact.project.repository.AllergyRepo;
+
+class AllergyServiceImplTest {
+
+    @Mock
+    private AllergyRepo arepo;
+
+    @InjectMocks
+    private AllergyServiceImpl allergyServiceImpl;
+
+    Allergy allergy;
+
+    List<Allergy> allergyList;
+
+    @BeforeEach
+    public void setUp() {
+        allergy = new Allergy();
+        allergy.setAllergyName("Dust");
+        allergy.setAllergyType("DustAllegy");
+
+        allergy1 = new Allergy();
+        allergy1.setAllergyName("Dust");
+        allergy1.setAllergyType("DustAllegy");
+
+        allergyList.add(allergy);
+
+        allergyList.add(allergy1);
+    }
+
+    @Test
+    void testGetAllergybyId() {
+        // fail("Not yet implemented");
+
+    }
+
+}

@@ -1,0 +1,30 @@
+
+Hsquid:S1220""Move this file to a named package.H•šRMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ù€ûßüÿÿÿÿ8Ï¯­¦©0HšRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÃµÀ¤þÿÿÿÿ8±ÕÎ¦©0HŽšRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(óá“Ýþÿÿÿÿ8–›€¦©0H–šRMAJORZ
+CODE_SMELL
+r
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ÞŠ—ºÿÿÿÿÿ8Œ«Ï¦©0H‘šRMAJORZ
+CODE_SMELL
+ksquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8–›€¦©0H’šRINFOZ
+CODE_SMELL
+dsquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿHšRINFOZ
+CODE_SMELL
+\squid:S1659""Declare "size" on a separate line.(˜¾ƒÃøÿÿÿÿ8–›€¦©0H“šRMINORZ
+CODE_SMELL
+Šsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘8¹Ê÷¦©0H˜šRCRITICALZ
+CODE_SMELL
+msquid:S1197"8Move the array designator from the variable to the type.(“ÍÇ‘8–›€¦©0H”šRMINORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(‘Ä¸Éùÿÿÿÿ8Òë³¦©0H—šRMAJORZ
+CODE_SMELL
+m
+squid:S106""9Replace this use of System.out or System.err by a logger.(§ÎÍ8Œ«Ï¦©0H™šRMAJORZ
+CODE_SMELL

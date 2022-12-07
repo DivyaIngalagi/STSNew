@@ -1,0 +1,27 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+class SortIntegerTest {
+
+    @Before
+    public void setUp() {
+        SortInteger si = new SortInteger();
+        si.sortInt();
+    }
+
+    @Test
+    void testSortInt() {
+        int[] a = {-100,1
+                ,2,
+                3,
+                5,
+                6,
+                100};
+        SortInteger si=new SortInteger();
+
+        assertEquals(a, si.sortInt());
+    }
+
+}

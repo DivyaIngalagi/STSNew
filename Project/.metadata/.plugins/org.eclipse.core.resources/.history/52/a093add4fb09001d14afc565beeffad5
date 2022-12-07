@@ -1,0 +1,29 @@
+package com.impact.project.serviceImpl;
+
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.impact.project.repository.SlotMasterRepo;
+
+import antlr.collections.List;
+
+class SlotMasterServiceImplTest {
+
+    @Mock
+    SlotMasterRepo slotMasterRepo;
+
+    @InjectMocks
+    SlotServiceImpl slotServiceImpl;
+
+    List<SlotMaster>slotMaster;
+
+    @Test
+    void testGetAllSlot() {
+        // fail("Not yet implemented");
+        when(slotMasterRepo.findAll()).thenReturn()
+    }
+
+}

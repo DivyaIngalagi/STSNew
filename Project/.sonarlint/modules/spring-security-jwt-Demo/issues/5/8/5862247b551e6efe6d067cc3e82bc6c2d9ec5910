@@ -1,0 +1,5 @@
+
+hsquid:S1191"5Use classes from the Java API instead of Sun classes.(€è×¡úÿÿÿÿHıRMAJORZ
+CODE_SMELL
+squid:UselessImportCheck"MRemove this unused import 'com.sun.org.apache.xpath.internal.operations.And'.(€è×¡úÿÿÿÿHıRMINORZ
+CODE_SMELL

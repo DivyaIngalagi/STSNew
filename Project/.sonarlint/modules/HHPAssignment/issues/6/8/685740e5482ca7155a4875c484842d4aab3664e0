@@ -1,0 +1,8 @@
+
+dsquid:S1135	"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿHÑƒRINFOZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(¾×¬ª8Ã²ëÐ¸0HÒƒRMAJORZ
+CODE_SMELL
+‰squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¢‘ªþÿÿÿÿ8Ã²ëÐ¸0HÓƒRMINORZ
+CODE_SMELL

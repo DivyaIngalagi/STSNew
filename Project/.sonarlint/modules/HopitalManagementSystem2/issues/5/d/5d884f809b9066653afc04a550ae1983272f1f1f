@@ -1,0 +1,16 @@
+
+psquid:UselessImportCheck"5Remove this unused import 'com.example.model.Doctor'.(ﬂÛΩúHùŒRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"/Remove this unused import 'java.util.Optional'.(®òÎ›¸ˇˇˇˇHûŒRMINORZ
+CODE_SMELL
+vsquid:UselessImportCheck"6Remove this unused import 'com.example.model.Patient'.(†¸ÛªˇˇˇˇˇHüŒRMINORZ
+CODE_SMELL
+squid:UselessImportCheck
+"?Remove this unused import 'com.example.dao.HospitalRepository'.(ëÅ…∆˙ˇˇˇˇH†ŒRMINORZ
+CODE_SMELL
+ésquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "app".(†ÉÅ´˚ˇˇˇˇH°ŒRMINORZ
+CODE_SMELL
+âsquid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "app".(ûÚ’äH¢ŒRMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck">Remove this unused import 'com.example.dao.PatientRepository'.(¨Â„ÁH£ŒRMINORZ
+CODE_SMELL

@@ -1,0 +1,43 @@
+package com.impact.project.serviceImpl;
+
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.impact.project.model.SlotMaster;
+import com.impact.project.repository.SlotMasterRepo;
+
+class SlotMasterServiceImplTest {
+
+    @Mock
+    SlotMasterRepo slotMasterRepo;
+
+    @InjectMocks
+    SlotServiceImpl slotServiceImpl;
+
+    List<SlotMaster> slotMasterLst = new ArrayList<>();
+
+    SlotMaster slotMaster;
+
+    @BeforeEach
+    public void setUp() {
+        slotMaster = new SlotMaster();
+        slotMaster.setSlotMasterId(1);
+        slotMaster.setSlotStartTime("09:00AM");
+        slotMaster.setSlotEndTime("10:00AM");
+        slotMasterLst.add(slotMaster);
+    }
+
+    @Test
+    void testGetAllSlot() {
+        // fail("Not yet implemented");
+        when(slotMasterRepo.findAll()).thenReturn()
+    }
+
+}

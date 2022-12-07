@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: INVENTORY-SERVICE
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/inventory/**     
+        - id: CATALOG-SERVICES
+          uri: lb://CATALOG-SERVICES
+          predicates:
+            - Path=/catalog/**
+
+eureka:
+   client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+     defaultZone: http://localhost:8761/eureka
+   instance:
+     hostname:localhost          
+
+server:
+  port: 8900
+

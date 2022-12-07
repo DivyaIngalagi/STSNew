@@ -1,0 +1,21 @@
+server:
+  port: 8900
+  
+spring:
+  application:
+    name: CLOUD-GATEWAY-PRODUCT
+  cloud:
+    gateway:
+      routes:
+        - id: CATALOG-SERVICE
+          uri: lb://CATALOG-SERVICE
+          predicates:
+             - Path=/catalog/**
+        - id: INVENTORY-SERVICE
+          uri: lb://INVENTORY-SERVICE
+          predicates:
+            - Path=/inventory/**
+
+
+
+     

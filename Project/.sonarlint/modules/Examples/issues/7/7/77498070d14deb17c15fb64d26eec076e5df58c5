@@ -1,0 +1,36 @@
+
+Qsquid:S1643"Use a StringBuilder instead.(¯Ï–Á8Óýë¥¿0HÉšRMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»ý‡“üÿÿÿÿ8ºŠï¦¿0HÁšRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ç þ¯úÿÿÿÿ8ã”†£¿0HËšRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þ¤‘­üÿÿÿÿ8„êî¦¿0HÅšRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8˜Ó†£¿0HÄšRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(é¨‡®8æ¢¥¿0HÌšRMAJORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8ÔÅ¥¿0HÇšRMAJORZ
+CODE_SMELL
+ksquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8èð¡¿0HÍšRINFOZ
+CODE_SMELL
+Hsquid:S1220""Move this file to a named package.HÊšRMINORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(²‰µÐ8üóí¢¿0HÃšRMAJORZ
+CODE_SMELL
+m
+squid:S106"9Replace this use of System.out or System.err by a logger.(€ËÂ¼8«è„¦¿0HÈšRMAJORZ
+CODE_SMELL
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(È‡ê\HÀšRMINORZ
+CODE_SMELL
+r
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨ÍÕÁþÿÿÿÿ8¤ÔÚ¦¿0HÂšRMAJORZ
+CODE_SMELL
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(É¾r8ž„Ô¥¿0HÆšRMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(þ¤‘­üÿÿÿÿ8˜Ó†£¿0H¿šRMAJORZ
+CODE_SMELL

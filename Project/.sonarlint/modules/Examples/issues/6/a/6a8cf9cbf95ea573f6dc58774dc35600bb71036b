@@ -1,0 +1,9 @@
+
+Hsquid:S1220""Move this file to a named package.HššRMINORZ
+CODE_SMELL
+osquid:S2209	"5Change this instance-reference to a static reference.(Š ÔÌıÿÿÿÿ8÷‚‘ÚÅ0H›šRMAJORZ
+CODE_SMELL
+tsquid:S2259	"AA "NullPointerException" could be thrown; "csm" is nullable here.(Š ÔÌıÿÿÿÿ8÷‚‘ÚÅ0HœšRMAJORZBUG
+l
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñ_8÷‚‘ÚÅ0HšRMAJORZ
+CODE_SMELL

@@ -1,0 +1,87 @@
+
+…squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎÅ˜þÿÿÿÿ8ñ“Ó»Â0Hã–RMAJORZ
+CODE_SMELL
+zsquid:S2259â"FA "NullPointerException" could be thrown; "prevNode" is nullable here.(ü¨™Ðþÿÿÿÿ8©ëñÂÂ0Hä–RMAJORZBUG
+vsquid:S2259Ô"GA "NullPointerException" could be thrown; "pointHead" is nullable here.(ÏÕÞº8ÄŸÔÃÂ0Hå–RMAJORZBUG
+ksquid:S1135H"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8œ‰ÄÂ0Hæ–RINFOZ
+CODE_SMELL
+r
+squid:S106d"9Replace this use of System.out or System.err by a logger.(©¯œäÿÿÿÿÿ8“ˆËÃÂ0Hç–RMAJORZ
+CODE_SMELL
+ƒsquid:UnusedPrivateMethodƒ":Remove this unused private "deleteFromAnyPosition" method.(¹˜‡øÿÿÿÿ8œÕ÷åÂ0Hè–RMAJORZ
+CODE_SMELL
+m
+squid:S106#"9Replace this use of System.out or System.err by a logger.(ûÄœ—8º—ä»Â0Hé–RMAJORZ
+CODE_SMELL
+s
+squid:S106†"9Replace this use of System.out or System.err by a logger.(ŠËö­øÿÿÿÿ8œÕ÷åÂ0Hê–RMAJORZ
+CODE_SMELL
+s
+squid:S106¦"9Replace this use of System.out or System.err by a logger.(ˆê‹¼ùÿÿÿÿ8ùËÊÂÂ0Hë–RMAJORZ
+CODE_SMELL
+dsquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿHì–RINFOZ
+CODE_SMELL
+lsquid:S1135¿"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8œÕ÷åÂ0Hí–RINFOZ
+CODE_SMELL
+|squid:UnusedPrivateMethod£"3Remove this unused private "deleteFromLast" method.(óÙø°ûÿÿÿÿ8œÕ÷åÂ0Hî–RMAJORZ
+CODE_SMELL
+€squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(É€žŸ8°ˆ¾»Â0Hï–RMAJORZ
+CODE_SMELL
+r
+squid:S106W"9Replace this use of System.out or System.err by a logger.(³™Öùÿÿÿÿ8œÕ÷åÂ0Hð–RMAJORZ
+CODE_SMELL
+lsquid:S1135„"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8°®ª¾Â0Hñ–RINFOZ
+CODE_SMELL
+lsquid:S1135û"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8œÕ÷åÂ0Hò–RINFOZ
+CODE_SMELL
+ksquid:S1135s"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8´¤Ø½Â0Hó–RINFOZ
+CODE_SMELL
+rsquid:S2259“"CA "NullPointerException" could be thrown; "start" is nullable here.(Ìã Ð8ú§îÄÂ0Hô–RMAJORZBUG
+usquid:S2259d"BA "NullPointerException" could be thrown; "slow" is nullable here.(©¯œäÿÿÿÿÿ8œÕ÷åÂ0Hõ–RMAJORZBUG
+s
+squid:S106¹"9Replace this use of System.out or System.err by a logger.(ˆê‹¼ùÿÿÿÿ8œÕ÷åÂ0Hö–RMAJORZ
+CODE_SMELL
+lsquid:S1135¤"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8¢ÐÁ½Â0H÷–RINFOZ
+CODE_SMELL
+lsquid:S1135é"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8œÕ÷åÂ0Hø–RINFOZ
+CODE_SMELL
+wsquid:S2259"CA "NullPointerException" could be thrown; "start" is nullable here.(Ý”øËþÿÿÿÿ8‹¨áÄÂ0Hù–RMAJORZBUG
+usquid:S2259ß"FA "NullPointerException" could be thrown; "prevNode" is nullable here.(ŸÒÄú8©ëñÂÂ0Hú–RMAJORZBUG
+qsquid:S2259"CA "NullPointerException" could be thrown; "start" is nullable here.(Î¬èm8€º€ÅÂ0Hû–RMAJORZBUG
+m
+squid:S106…"9Replace this use of System.out or System.err by a logger.(Ë¤j8ýÔî¼Â0Hü–RMAJORZ
+CODE_SMELL
+vsquid:S2259»"BA "NullPointerException" could be thrown; "head" is nullable here.(‘¡–òùÿÿÿÿ8œ‰ÄÂ0Hý–RMAJORZBUG
+Žsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ñ¥ÁúÿÿÿÿHþ–RMINORZ
+CODE_SMELL
+ksquid:S1135]"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8Ô—§½Â0Hÿ–RINFOZ
+CODE_SMELL
+lsquid:S1135ô"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8œÕ÷åÂ0H€—RINFOZ
+CODE_SMELL
+vsquid:S2259Ÿ"BA "NullPointerException" could be thrown; "prev" is nullable here.(Âÿ‡Ûþÿÿÿÿ8²¢…ÅÂ0H—RMAJORZBUG
+squid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(ð”Ò98œÕ÷åÂ0H‚—RMAJORZ
+CODE_SMELL
+n
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(µš‡ü8Œ¸¦ÄÂ0Hƒ—RMAJORZ
+CODE_SMELL
+r
+squid:S106)"9Replace this use of System.out or System.err by a logger.(ýú‰ªùÿÿÿÿ8‚áÛ¼Â0H„—RMAJORZ
+CODE_SMELL
+n
+squid:S106Ë"9Replace this use of System.out or System.err by a logger.(„ðøÇ8Úèé¼Â0H…—RMAJORZ
+CODE_SMELL
+€squid:UnusedPrivateMethod¶"7Remove this unused private "deleteFromBegining" method.(Áã«äüÿÿÿÿ8œÕ÷åÂ0H†—RMAJORZ
+CODE_SMELL
+zsquid:S2259³"FA "NullPointerException" could be thrown; "prevLast" is nullable here.(­©Œ‚ýÿÿÿÿ8ø÷©ÄÂ0H‡—RMAJORZBUG
+ysquid:UnusedPrivateMethodr"6Remove this unused private "reverseLinkedList" method.(’ôÞ²8œÕ÷åÂ0Hˆ—RMAJORZ
+CODE_SMELL
+r
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ü…„ýÿÿÿÿ8‚áÛ¼Â0H‰—RMAJORZ
+CODE_SMELL
+ksquid:S1135h"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8Œ¸¦ÄÂ0HŠ—RINFOZ
+CODE_SMELL
+lsquid:S1135·"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ã»µÄÂ0H‹—RINFOZ
+CODE_SMELL
+r
+squid:S106X"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8œÕ÷åÂ0HŒ—RMAJORZ
+CODE_SMELL

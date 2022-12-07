@@ -1,0 +1,19 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+class SortIntegerTest {
+
+    @Before
+    public void setUp() {
+        SortInteger si=new SortInteger();
+    }
+    
+    @Test
+    void testSortInt() {
+        int[] a=
+        assertEquals(expected, actual);
+    }
+
+}

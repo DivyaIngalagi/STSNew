@@ -1,0 +1,10 @@
+
+[squid:S1481""(Remove this unused "doc" local variable.(ª‚ÖˆþÿÿÿÿHîîRMINORZ
+CODE_SMELL
+‰squid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "doc".(ÆÀ¼‡HïîRMINORZ
+CODE_SMELL
+jsquid:S1854""7Remove this useless assignment to local variable "doc".(ª‚ÖˆþÿÿÿÿHðîRMAJORZ
+CODE_SMELL
+_squid:S3655 "3Call "doct.isPresent()" before accessing the value.(ïŒÇëÿÿÿÿÿHñîRMAJORZBUG
+’squid:S1488="_Immediately return this expression instead of assigning it to the temporary variable "doctors".(Ã™í¬ÿÿÿÿÿHòîRMINORZ
+CODE_SMELL

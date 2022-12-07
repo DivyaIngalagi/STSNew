@@ -1,0 +1,34 @@
+
+m
+squid:S106="9Replace this use of System.out or System.err by a logger.(Ø¼¢ƒ8«¸àØ¢0HËóRMAJORZ
+CODE_SMELL
+lsquid:S1611€"7Remove the parentheses around the "physician" parameter(«Øí28«¸àØ¢0HÎóRMINORZ
+CODE_SMELL
+]squid:S1125˜")Remove the literal "false" boolean value.(—±°ëıÿÿÿÿHÆóRMINORZ
+CODE_SMELL
+lsquid:S3655"8Call "physician.isPresent()" before accessing the value.(£×È½ÿÿÿÿÿ8«¸àØ¢0HÍóRMAJORZBUG
+fsquid:S1948$".Make "restTemplate" transient or serializable.(„¤Ïƒ8«¸àØ¢0HĞóRCRITICALZ
+CODE_SMELL
+…squid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(„âŸÿÿÿÿÿ8«¸àØ¢0HÈóRMAJORZ
+CODE_SMELL
+…squid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó­Œ²úÿÿÿÿHÇóRMINORZ
+CODE_SMELL
+qsquid:S1854}">Remove this useless assignment to local variable "physicians".(£‰õ­ûÿÿÿÿHÅóRMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(¢ê§Ã8«¸àØ¢0HÉóRMAJORZ
+CODE_SMELL
+Œsquid:S00117g"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó­Œ²úÿÿÿÿ8«¸àØ¢0HÏóRMINORZ
+CODE_SMELL
+wsquid:S1192K"FDefine a constant instead of duplicating this literal "ADMIN" 4 times.(«„ú°HÄóRCRITICALZ
+CODE_SMELL
+m
+squid:S106-"9Replace this use of System.out or System.err by a logger.(–¹—Š8«¸àØ¢0HÊóRMAJORZ
+CODE_SMELL
+csquid:S1125"(Remove the literal "true" boolean value.(ıÁ¬¼şÿÿÿÿ8«¸àØ¢0HÌóRMINORZ
+CODE_SMELL
+fsquid:S1948".Make "physicianDao" transient or serializable.(ı™”ï8¼ÍóÛ¢0H„ôRCRITICALZ
+CODE_SMELL
+fsquid:S1948 ".Make "employeeRepo" transient or serializable.(Şÿ´–8¼ÍóÛ¢0H…ôRCRITICALZ
+CODE_SMELL
+lsquid:S1948'"/Make "userDtoMapper" transient or serializable.(ñ»…¾øÿÿÿÿ8¼ÍóÛ¢0H†ôRCRITICALZ
+CODE_SMELL

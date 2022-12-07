@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\CompleteProject\pms\API"/>
+			<item value="C:\Users\DivyaI\STS\Project\payment-service\eurekaServer"/>
+			<item value="C:\PMS-Project\pms\API"/>
+			<item value="C:\Users\DivyaI\STS\Project\demo-1"/>
+			<item value="C:\PMS-Project\pms\API\UserManagment"/>
+			<item value="C:\PMS-Project\pms\API\PatientVisitService"/>
+			<item value="C:\PMS-Project\pms\API\PatientService"/>
+			<item value="C:\PMS-Project\pms\API\NotesService"/>
+			<item value="C:\PMS-Project\pms\API\Gateway"/>
+			<item value="C:\PMS-Project\pms\API\Eureka-Server"/>
+			<item value="C:\PMS-Project\pms\API\AppointmentScheduleService"/>
+			<item value="C:\PMS-Project\pms\API\AdminServiceModule\AdminService"/>
+			<item value="C:\Users\DivyaI\STS\Project\Product-Catalog-Service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

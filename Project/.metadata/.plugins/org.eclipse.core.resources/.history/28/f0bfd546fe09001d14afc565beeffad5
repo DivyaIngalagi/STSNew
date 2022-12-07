@@ -1,0 +1,22 @@
+package com.impact.project.serviceImpl;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.repository.SlotRepo;
+
+@ExtendWith(MockitoExtension.class)
+class SlotServiceImplTest {
+
+    @Mock
+    private SlotRepo slotRepo;
+
+    @Test
+    void testSaveSlot() {
+        // fail("Not yet implemented");
+        
+    }
+
+}

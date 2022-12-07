@@ -1,0 +1,13 @@
+package com.impact.project;
+
+import org.junit.Test;
+
+//@SpringBootTest
+class AppointnmentScheduleServiceApplicationTest {
+
+    @Test
+    void contextLoads() {
+        // fail("Not yet implemented");
+    }
+
+}

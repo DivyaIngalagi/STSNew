@@ -1,0 +1,317 @@
+package com.impact.project.serviceImpl;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.impact.project.dto.AppointmentDto;
+import com.impact.project.dto.AppointmentOldSlot;
+import com.impact.project.dto.AppointmentScheduleRegisterDto;
+import com.impact.project.dto.PatientDto;
+import com.impact.project.dto.PhysicianDto;
+import com.impact.project.mapper.AppointmentScheduleMapper;
+import com.impact.project.model.AppointmentSchedule;
+import com.impact.project.model.NotificationCancel;
+import com.impact.project.model.Slot;
+import com.impact.project.model.SlotMaster;
+import com.impact.project.repository.AppointmentScheduleRepo;
+import com.impact.project.repository.NotificationRepo;
+import com.impact.project.repository.SlotMasterRepo;
+import com.impact.project.repository.SlotRepo;
+import com.impact.project.service.AppointmentScheduleService;
+import com.impact.project.service.SlotService;
+
+@Service
+public class AppointmentScheduleServiceImpl implements AppointmentScheduleService {
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Autowired
+    private AppointmentScheduleRepo appointRepo;
+
+    @Autowired
+    private SlotService slotService;
+
+    @Autowired
+    private SlotMasterRepo slotMasterRepo;
+
+    @Autowired
+    private SlotRepo slotRepo;
+
+    @Autowired
+    private NotificationRepo notifictionRepo;
+
+    @Autowired
+    private AppointmentScheduleMapper appointMapper;
+
+    @Override
+    @org.springframework.transaction.annotation.Transactional
+    public AppointmentSchedule createAppointment(AppointmentScheduleRegisterDto appointmentScheduleCreate) {
+
+        System.out.println("In create");
+        AppointmentSchedule appointSchedule = new AppointmentSchedule();
+
+        appointSchedule.setPatientId(appointmentScheduleCreate.getPatientid());
+        appointSchedule.setPatientName(appointmentScheduleCreate.getPatientname());
+        appointSchedule.setPhysicianId(appointmentScheduleCreate.getPhysicianid());
+        appointSchedule.setPhysicianName(appointmentScheduleCreate.getPhysicianname());
+
+        LocalDate todayDate = LocalDate.now();
+        appointSchedule.setDeleted(false);
+        appointSchedule.setLastUpdatedBy("Admin");
+        appointSchedule.setLastUpdateOn(todayDate);
+        appointSchedule.setCreatedBy("Admin");
+        appointSchedule.setCreatedOn(todayDate);
+
+        appointSchedule.setDateOfAppointment(appointmentScheduleCreate.getDateOfAppointment());
+
+        appointSchedule.setMeetingDesc(appointmentScheduleCreate.getMeetingDesc());
+        appointSchedule.setMeetingTitle(appointmentScheduleCreate.getMeetingTitle());
+        System.out.println("In create" + appointmentScheduleCreate.getMeetingDesc());
+        System.out.println("In getMeetingTitle" + appointmentScheduleCreate.getMeetingTitle());
+        System.out.println("appointmentScheduleCreate.getSlotId()" + appointmentScheduleCreate.getSlotId());
+        Optional<SlotMaster> slotMaster = slotMasterRepo.findById(appointmentScheduleCreate.getSlotId());
+        System.out.println("slotmaster" + slotMaster.toString());
+        Slot slot = new Slot();
+        slot.setStartTime(slotMaster.get().getSlotStartTime());
+        slot.setEndTime(slotMaster.get().getSlotEndTime());
+        // slot.setSlotname(slotMaster.get().getSlotname());
+        slot.setDateOfAppointment(appointmentScheduleCreate.getDateOfAppointment());
+        slot.setDeleted(false);
+        slot.setStatus("Available");
+        slot.setLastUpdatedBy("Admin");
+        slot.setLastUpdateOn(todayDate);
+        slot.setCreatedBy("Admin");
+        slot.setCreatedOn(todayDate);
+        slotService.saveSlot(slot);
+
+        appointSchedule.setSlot(slot);
+        return appointRepo.save(appointSchedule);
+    }
+
+    @Override
+    public List<AppointmentDto> displayAppointmentByPatientId(int patientId) {
+        List<AppointmentDto> allSchedulesDetails = new ArrayList<>();
+        List<AppointmentSchedule> allAppointments = appointRepo.displayAppointmentRelatedToPatient(patientId);
+
+        for (AppointmentSchedule appointmentSchedule : allAppointments) {
+            if (appointmentSchedule.isDeleted() == false) {
+                AppointmentDto appDto = new AppointmentDto();
+                appDto.setPatientid(appointmentSchedule.getPatientId());
+                appDto.setDoctorid(appointmentSchedule.getPhysicianId());
+                appDto.setAppointmentId(appointmentSchedule.getAppointmentId());
+                appDto.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+                appDto.setStartTime(appointmentSchedule.getSlot().getStartTime());
+                appDto.setEndTime(appointmentSchedule.getSlot().getEndTime());
+                appDto.setPatientName(appointmentSchedule.getPatientName());
+
+                System.out.println(
+                        "appointmentSchedule.getPatient().getName()" + appointmentSchedule.getPatientName());
+                System.out.println("getName()" + appointmentSchedule.getPatientName());
+                appDto.setPhysicianName(appointmentSchedule.getPhysicianName());
+                appDto.setMeetingtitle(appointmentSchedule.getMeetingTitle());
+                allSchedulesDetails.add(appDto);
+
+            }
+
+        }
+
+        return allSchedulesDetails;
+    }
+
+    @Override
+    public List<AppointmentDto> displayAppointmentHistoryByPatientId(int patientId) {
+
+        List<AppointmentDto> allSchedulesDetails = new ArrayList<>();
+        List<AppointmentSchedule> allAppointments = appointRepo
+                .displayAppointmentHistoryRelatedToPatient(patientId);
+
+        for (AppointmentSchedule appointmentSchedule : allAppointments) {
+            if (appointmentSchedule.isDeleted() == false) {
+                AppointmentDto appDto = new AppointmentDto();
+                appDto.setPatientid(appointmentSchedule.getPatientId());
+                appDto.setDoctorid(appointmentSchedule.getPhysicianId());
+                appDto.setAppointmentId(appointmentSchedule.getAppointmentId());
+                appDto.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+                appDto.setStartTime(appointmentSchedule.getSlot().getStartTime());
+                appDto.setEndTime(appointmentSchedule.getSlot().getEndTime());
+                appDto.setPatientName(appointmentSchedule.getPatientName());
+
+                System.out.println(
+                        "appointmentSchedule.getPatient().getName()" + appointmentSchedule.getPatientName());
+                System.out.println("getName()" + appointmentSchedule.getPatientName());
+                appDto.setPhysicianName(appointmentSchedule.getPhysicianName());
+                appDto.setMeetingtitle(appointmentSchedule.getMeetingTitle());
+                allSchedulesDetails.add(appDto);
+
+            }
+
+        }
+
+        return allSchedulesDetails;
+
+    }
+
+    @Override
+    public AppointmentSchedule getAppointmentByID(int aID) {
+        Optional<AppointmentSchedule> appScheduleGet = appointRepo.findById(aID);
+        return appScheduleGet.get();
+    }
+
+    @Override
+    public void deleteAppointment(int appointmentId) {
+        Optional<AppointmentSchedule> appointScheduleDelete = appointRepo.findById(appointmentId);
+        Optional<Slot> deletedSlot = slotRepo.findById(appointScheduleDelete.get().getSlot().getSlotId());
+        deletedSlot.get().setDeleted(true);
+        slotRepo.save(deletedSlot.get());
+        // slotRepo.updateSlotsIsDeleted(appointScheduleDelete.get().getSlot().getSlot_id());
+        appointScheduleDelete.get().setDeleted(true);
+        appointRepo.save(appointScheduleDelete.get());
+        // appointRepo.updateAppointmentsIsDeleted(appointScheduleDelete.get().getAppointmentId());
+
+    }
+
+    @Override
+    @org.springframework.transaction.annotation.Transactional
+    public AppointmentOldSlot updateAppointment(AppointmentOldSlot appointmentSchedule) {
+
+        Optional<AppointmentSchedule> appoint = appointRepo.findById(appointmentSchedule.getAppointmentId());
+
+        AppointmentSchedule appointSchdUpdate = appoint.get();
+        LocalDate todayDate = LocalDate.now();
+        Optional<Slot> prevSlot = slotRepo.findById(appointmentSchedule.getOldSlotId());
+        prevSlot.get().setDeleted(true);
+        slotRepo.save(prevSlot.get());
+        Optional<SlotMaster> slotMaster = slotMasterRepo.findById(appointmentSchedule.getSlot().getSlotId());
+
+        Slot slot = new Slot();
+        slot.setStartTime(slotMaster.get().getSlotStartTime());
+        slot.setEndTime(slotMaster.get().getSlotEndTime());
+        // slot.setSlotname(slotMaster.get().getSlotname());
+        slot.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+        slot.setDeleted(false);
+        slot.setStatus("Aavailable");
+        slot.setLastUpdatedBy("Admin");
+        slot.setLastUpdateOn(todayDate);
+        slot.setCreatedBy("Admin");
+        slot.setCreatedOn(todayDate);
+        Slot savedSlot = slotService.saveSlot(slot);
+
+        appointSchdUpdate.setAppointmentId(appointmentSchedule.getAppointmentId());
+        // String dateStr = appointmentSchedule.getDateofappointment();
+        // String actualDate = dateStr.substring(0, 9);
+        appointSchdUpdate.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+        appointSchdUpdate.setMeetingDesc(appointmentSchedule.getMeetingDesc());
+        appointSchdUpdate.setMeetingTitle(appointmentSchedule.getMeetingTitle());
+        appointSchdUpdate.setSlot(savedSlot);
+        appointSchdUpdate.setPhysicianId(appointmentSchedule.getPhysicianId());
+        appointSchdUpdate.setPhysicianName(appointmentSchedule.getPhysicianName());
+        appointSchdUpdate.setPatientId(appointmentSchedule.getPatientId());
+        appointSchdUpdate.setPatientName(appointmentSchedule.getPatientName());
+        appointSchdUpdate.setLastUpdatedBy("Admin");
+        appointSchdUpdate.setLastUpdateOn(todayDate);
+        appointSchdUpdate.setCreatedBy("Admin");
+        appointSchdUpdate.setCreatedOn(todayDate);
+
+        return appointMapper.mapToAppointmentOldSlot(appointRepo.save(appointSchdUpdate));
+    }
+
+    @Override
+    public List<AppointmentDto> displayAllAppointment() {
+        List<AppointmentDto> allSchedulesDetails = new ArrayList<>();
+        List<AppointmentSchedule> allAppointments = appointRepo.findAll();
+        for (AppointmentSchedule appointmentSchedule : allAppointments) {
+            if (appointmentSchedule.isDeleted() == false) {
+
+                AppointmentDto appDto = new AppointmentDto();
+                appDto.setDoctorid(appointmentSchedule.getPhysicianId());
+                appDto.setPhysicianName(appointmentSchedule.getPhysicianName());
+                appDto.setPatientid(appointmentSchedule.getPatientId());
+                appDto.setPatientName(appointmentSchedule.getPatientName());
+
+                Optional<Slot> slotObj = slotRepo.findById(appointmentSchedule.getSlot().getSlotId());
+                appDto.setStartTime(slotObj.get().getStartTime());
+                appDto.setEndTime(slotObj.get().getEndTime());
+
+                appDto.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+                appDto.setAppointmentId(appointmentSchedule.getAppointmentId());
+                allSchedulesDetails.add(appDto);
+            }
+        }
+        return allSchedulesDetails;
+    }
+
+    @Override
+    public List<AppointmentDto> displayAppointmentByDoctorId(int doctorId) {
+
+        List<AppointmentDto> allSchedulesDetails = new ArrayList<>();
+        List<AppointmentSchedule> allAppointments = appointRepo.getAllAppointmentRealtedToDoctor(doctorId);
+
+        for (AppointmentSchedule appointmentSchedule : allAppointments) {
+            if (appointmentSchedule.isDeleted() == false) {
+                AppointmentDto appDto = new AppointmentDto();
+                appDto.setDoctorid(appointmentSchedule.getPhysicianId());
+                appDto.setPhysicianName(appointmentSchedule.getPhysicianName());
+                appDto.setPatientid(appointmentSchedule.getPatientId());
+                appDto.setPatientName(appointmentSchedule.getPatientName());
+                appDto.setAppointmentId(appointmentSchedule.getAppointmentId());
+                appDto.setDateOfAppointment(appointmentSchedule.getDateOfAppointment());
+                appDto.setStartTime(appointmentSchedule.getSlot().getStartTime());
+                appDto.setEndTime(appointmentSchedule.getSlot().getEndTime());
+
+                appDto.setMeetingtitle(appointmentSchedule.getMeetingTitle());
+                allSchedulesDetails.add(appDto);
+
+            }
+
+        }
+
+        return allSchedulesDetails;
+    }
+
+    @Override
+    public List<NotificationCancel> getNotification(int patientId) {
+
+        List<NotificationCancel> nList = notifictionRepo.notification(patientId);
+        return nList;
+    }
+
+    @Override
+    public String getPatientName(int patientId) {
+        String name = restTemplate
+                .getForObject("http://PATIENT-SERVICE/api/patient/getpatientname/" + patientId, String.class);
+        return name;
+
+    }
+
+    @Override
+    public List<PhysicianDto> getPhysicianList() {
+
+        ResponseEntity<PhysicianDto[]> response = restTemplate.getForEntity(
+                "http://ADMIN-SERVICE/api/emp/physician/physicians-list-appointment", PhysicianDto[].class);
+
+        PhysicianDto[] physicianDtos = response.getBody();
+        System.out.println("Array" + Arrays.asList(physicianDtos));
+        return Arrays.asList(physicianDtos);
+    }
+
+    @Override
+    public List<PatientDto> getPatientList() {
+
+        ResponseEntity<PatientDto[]> response = restTemplate
+                .getForEntity("http://PATIENT-SERVICE/api/patient/getpatientlistwithid", PatientDto[].class);
+
+        PatientDto[] patientDtos = response.getBody();
+        System.out.println("Array" + Arrays.asList(patientDtos));
+        return Arrays.asList(patientDtos);
+    }
+
+}

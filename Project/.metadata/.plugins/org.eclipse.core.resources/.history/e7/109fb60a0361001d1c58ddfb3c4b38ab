@@ -1,0 +1,12 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class SortIntegerTest {
+
+    @Test
+    void testSortInt() {
+        fail("Not yet implemented");
+    }
+
+}

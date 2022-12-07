@@ -1,0 +1,39 @@
+
+®squid:S1319"tThe type of the "std_marks" object should be an interface such as "List" rather than the implementation "ArrayList".(¥ÅûÕùÿÿÿÿ8„ºğÉ¸0HÇ„RMINORZ
+CODE_SMELL
+ªsquid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ËËÿÅúÿÿÿÿ8¹ÛşÈ¸0HĞ„RMINORZ
+CODE_SMELL
+¨squid:S13190"nThe type of the "std" object should be an interface such as "List" rather than the implementation "ArrayList".(Çñœîûÿÿÿÿ8ïÚÎÌ¸0HÍ„RMINORZ
+CODE_SMELL
+‰squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿éóüÿÿÿÿ8¹ÛşÈ¸0HÑ„RMINORZ
+CODE_SMELL
+hsquid:S1068".Remove this unused "totalMarks" private field.(¡˜Šúùÿÿÿÿ8˜¯·Ñ¸0HÊ„RMAJORZ
+CODE_SMELL
+r
+squid:S1062"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8ÑÓ€Ğ¸0HÃ„RMAJORZ
+CODE_SMELL
+Œsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ÅûÕùÿÿÿÿ8Áá€É¸0HÅ„RMINORZ
+CODE_SMELL
+£squid:S13195"nThe type of the "std" object should be an interface such as "List" rather than the implementation "ArrayList".(—óÿ¯8İ±êÌ¸0HÕ„RMINORZ
+CODE_SMELL
+Œsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿éóüÿÿÿÿ8Áá€É¸0HÈ„RMINORZ
+CODE_SMELL
+‰squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËËÿÅúÿÿÿÿ8¹ÛşÈ¸0HÖ„RMINORZ
+CODE_SMELL
+Œsquid:S00117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¹´úşÿÿÿÿ8„ºğÉ¸0HÎ„RMINORZ
+CODE_SMELL
+‰squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ÅûÕùÿÿÿÿ8¹ÛşÈ¸0HÔ„RMINORZ
+CODE_SMELL
+…squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(èšØğùÿÿÿÿ8¾Ñ÷Ï¸0HË„RMAJORZ
+CODE_SMELL
+m
+squid:S1069"9Replace this use of System.out or System.err by a logger.(ÚéêÇ8ƒĞ¸0H×„RMAJORZ
+CODE_SMELL
+‰squid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à§ì¸ùÿÿÿÿ8¹ÛşÈ¸0HÓ„RMINORZ
+CODE_SMELL
+®squid:S1319%"tThe type of the "std_marks" object should be an interface such as "List" rather than the implementation "ArrayList".(“¹´úşÿÿÿÿ8Áá€É¸0HÌ„RMINORZ
+CODE_SMELL
+Œsquid:S00117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“¹´úşÿÿÿÿ8¹ÛşÈ¸0HÉ„RMINORZ
+CODE_SMELL
+ksquid:S1135-"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8Áá€É¸0HÆ„RINFOZ
+CODE_SMELL

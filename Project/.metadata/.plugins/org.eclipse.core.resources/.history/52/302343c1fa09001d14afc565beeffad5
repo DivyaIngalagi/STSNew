@@ -1,0 +1,15 @@
+package com.impact.project;
+
+@SpringBootTest
+class AppointnmentScheduleServiceApplicationTest {
+
+     @Test
+    void contextLoads() {
+        // fail("Not yet implemented");
+    }
+
+}
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
+
+// @SpringBootTest

@@ -1,0 +1,35 @@
+package com.example.service;
+
+import java.util.Random;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.model.Payment;
+import com.example.repository.PaymentRepository;
+
+
+
+
+@Service
+public class PaymentService {
+
+	@Autowired
+	PaymentRepository paymentRepository;
+	
+	public Payment doPayment(Payment payment)
+	{
+		//2nd
+		payment.setPaymentStatus(paymentProcess());
+		//call to payment gateway1st
+		payment.setTransactionId(UUID.randomUUID().toString());
+		return paymentRepository.save(payment);
+	}
+	
+	public String paymentProcess()//2ndmethod
+	{
+		//giving call to the payment gateway(paypal,paytm...)
+		return new Random().nextBoolean()?"success":"false";
+	}
+}

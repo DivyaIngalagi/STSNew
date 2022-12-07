@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html
+xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient profile</title>
+<style type="text/css">
+body {
+	background-color: olive;
+}
+
+input[type=text],input[type=password], select {
+  width: 50%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 1px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div>
+<form  action=# th:action="@{/patientregs}" th:object="${patientreg}">
+ <h1>Patient Registration</h1>
+
+	Enter User Name:  <input type="text" th:field="*{username}" placeholder="Enter First Name" autofocus>
+    <br/>
+  	Enter password:  <input type="password" th:field="*{password}" placeholder="Enter Password">
+  	<br/>
+  	First First Name:  <input type="text" th:field="*{firstName}" placeholder="Enter User Name" autofocus>
+    <br/>
+  	Enter Last name:  <input type="text" th:field="*{lastName}" placeholder="Enter Last Name">
+  	<br/>
+  	Enter Email Address:  <input type="text" th:field="*{email}" placeholder="Enter Email Address" autofocus>
+    <br/>
+  	Mobile No:  <input type="text" th:field="*{mobileno}" placeholder="Enter Mobile Number">
+  	<br/>
+  	Gender:  <input type="radio" th:field="*{gender}" value="Male" autofocus>Male
+  			 <input type="radio" th:field="*{gender}" value="FeMale">Female
+     <br/>
+     City:  <input type="text" th:field="*{city}" placeholder="Enter City" autofocus>
+  	
+  	<br/>
+  	Address:  <input type="text" th:field="*{address}" placeholder="Enter Address" autofocus>
+   
+<br/>
+  <input type="submit" value="submit"/>
+</form>
+</div>
+
+
+ 
+</body>
+</html>

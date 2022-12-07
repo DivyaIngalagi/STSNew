@@ -1,0 +1,19 @@
+package com.impact.project.serviceImpl;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
+import com.impact.project.repository.AllergyRepo;
+
+class AllergyServiceImplTest {
+
+    @Mock
+    private AllergyRepo arepo;
+
+    @Test
+    void testGetAllergybyId() {
+        // fail("Not yet implemented");
+
+    }
+
+}

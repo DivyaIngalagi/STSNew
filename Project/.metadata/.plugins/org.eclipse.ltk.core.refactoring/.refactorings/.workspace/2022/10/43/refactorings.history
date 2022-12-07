@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 16 resources" deleteContents="false" description="Delete 16 resources" element1="/AdminService" element10="/Gateway" element11="/hystrix-dashboard" element12="/NotesService" element13="/PatientService" element14="/PatientVisit" element15="/user-service" element16="/UserManagment" element2="/AppointmentScheduleService" element3="/cloud-gateway" element4="/Cloud-GatewayProduct" element5="/Config-Server" element6="/Eureka-Server" element7="/eurekaServer" element8="/EurekaServerProduct" element9="/Examples" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="16" stamp="1666161215959"/>
+</session>

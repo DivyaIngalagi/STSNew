@@ -1,0 +1,17 @@
+
+msquid:S1854h":Remove this useless assignment to local variable "nurses".(›º•„ıÿÿÿÿH¼óRMAJORZ
+CODE_SMELL
+m
+squid:S106#"9Replace this use of System.out or System.err by a logger.(à¯„ê8š¿ßØ¢0H½óRMAJORZ
+CODE_SMELL
+œsquid:S1488`"bImmediately return this expression instead of assigning it to the temporary variable "savedNurse".(­†î«úÿÿÿÿ8š¿ßØ¢0H¾óRMINORZ
+CODE_SMELL
+”squid:S1488"_Immediately return this expression instead of assigning it to the temporary variable "address".(Å±É…8š¿ßØ¢0H¿óRMINORZ
+CODE_SMELL
+squid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "savedNurse".(­†î«úÿÿÿÿ8š¿ßØ¢0HÀóRMINORZ
+CODE_SMELL
+]squid:S1125k"(Remove the literal "true" boolean value.(‰µ·Ÿ8š¿ßØ¢0HÁóRMINORZ
+CODE_SMELL
+gsquid:S3655x"4Call "nurse.isPresent()" before accessing the value.(şÛ‡›ıÿÿÿÿ8š¿ßØ¢0HÂóRMAJORZBUG
+hsquid:S1611j"3Remove the parentheses around the "nurse" parameter(Ñİ†È8š¿ßØ¢0HÃóRMINORZ
+CODE_SMELL

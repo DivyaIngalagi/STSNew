@@ -1,0 +1,164 @@
+package com.impact.project.serviceImpl;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.dto.UserDto;
+import com.impact.project.entity.User;
+import com.impact.project.mapper.UserDtoMapper;
+import com.impact.project.model.AppointmentSchedule;
+import com.impact.project.repository.UserRepository;
+
+@ExtendWith(MockitoExtension.class)
+class UserServiceImplTest {
+
+    @Mock
+    private UserRepository userRepository;
+
+    @InjectMocks
+    private UserServiceImpl userviceImpl;
+
+    @Mock
+    private UserDtoMapper userDtoToMapper;
+
+    List<User> userList;
+
+    List<UserDto> userDtoList;
+
+    @BeforeEach
+    public void setUp() {
+        userList = new ArrayList<>();
+        User userDto = new User();
+        userDto.setFirstName("Guru");
+        userDto.setLastName("N");
+        userList.add(userDto);
+
+        User userDto1 = new User();
+        userDto1.setFirstName("Prashant");
+        userDto1.setLastName("N");
+        userList.add(userDto1);
+
+        userDtoList = new ArrayList<>();
+        UserDto userDto2 = new UserDto();
+        userDto2.setFirstName("Guru");
+        userDto2.setLastName("N");
+
+        UserDto userDto3 = new UserDto();
+        userDto3.setFirstName("Prashant");
+        userDto3.setLastName("N");
+        userDtoList.add(userDto2);
+        userDtoList.add(userDto3);
+    }
+
+    // @Test
+    // void testRegisterUser() {
+    // fail("Not yet implemented");
+    // }
+    //
+    @Test
+    void testUpdateUser() {
+        // fail("Not yet implemented");
+        Optional<User> optional = Optional.of(User);
+        Mockito.when(userRepository.findById(1)).thenReturn(userList.get(0));
+    }
+    //
+    // @Test
+    // void testUpdateUserPassword() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testDeactivateUser() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetUser() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetHospitalUser() {
+    // fail("Not yet implemented");
+    // }
+
+    @Test
+    void testGetAllUsers() {
+
+        Mockito.when(userRepository.findAll()).thenReturn(userList);
+        Mockito.when(userDtoToMapper.getUserDtos(userList)).thenReturn(userDtoList);
+        assertEquals(2, userviceImpl.getAllUsers().size());
+    }
+
+    // @Test
+    // void testGetUserForForgot() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetAllPatients() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetAllPhysician() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetNurses() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetHospitalUsers() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testLoginUser() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testForGotPassword() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testHospitalUserPasswordSetting() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetUserById() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetUserByUsernameOrEmail() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testGetUserByEmail() {
+    // fail("Not yet implemented");
+    // }
+    //
+    // @Test
+    // void testIsActiveUser() {
+    // fail("Not yet implemented");
+    // }
+
+}

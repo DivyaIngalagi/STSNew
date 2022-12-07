@@ -1,0 +1,234 @@
+package com.impact.project.serviceImpl;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Optional;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.dto.AppointmentOldSlot;
+import com.impact.project.dto.AppointmentScheduleRegisterDto;
+import com.impact.project.mapper.AppointmentScheduleMapper;
+import com.impact.project.model.AppointmentSchedule;
+import com.impact.project.model.Slot;
+import com.impact.project.model.SlotMaster;
+import com.impact.project.repository.AppointmentScheduleRepo;
+import com.impact.project.repository.SlotMasterRepo;
+import com.impact.project.repository.SlotRepo;
+
+@ExtendWith(MockitoExtension.class)
+class AppointmentScheduleServiceImplTest {
+
+    @Mock
+    AppointmentScheduleRepo appointmentScheduleRepo;
+
+    @Mock
+    SlotRepo slotRepo;
+
+    @Mock
+    SlotMasterRepo slotMasterRepo;
+
+    @InjectMocks
+    SlotMasterServiceImpl slotMasterServiceImpl;
+
+    @InjectMocks
+    AppointmentScheduleServiceImpl appointmentServiceImpl;
+
+    @InjectMocks
+    SlotServiceImpl slotServiceImpl;
+
+    SlotMaster slotMaster;
+
+    AppointmentSchedule appointmentSchedule;
+
+    AppointmentOldSlot appointmentOldSlot;
+
+    AppointmentScheduleRegisterDto appointmentScheduleRegisterDto;
+
+    AppointmentScheduleMapper appointMapper;
+
+    Slot slot;
+
+    @BeforeEach
+    public void setUp() {
+        LocalDate todayDate = LocalDate.now();
+        slot = new Slot();
+        slot.setSlotId(1);
+        slot.setDateOfAppointment(new Date());
+        slot.setStartTime("09:00AM");
+        slot.setEndTime("10:00AM");
+        slot.setStatus("Available");
+        slot.setCreatedBy("Divya");
+        slot.setCreatedOn(todayDate);
+        slot.setLastUpdatedBy("Divya");
+        slot.setLastUpdateOn(todayDate);
+        slot.setDeleted(false);
+
+        appointmentSchedule = new AppointmentSchedule();
+        appointmentSchedule.setAppointmentId(1);
+        appointmentSchedule.setDateOfAppointment(new Date());
+        appointmentSchedule.setLastUpdatedBy("Divya");
+        appointmentSchedule.setLastUpdateOn(todayDate);
+        appointmentSchedule.setMeetingTitle("Rehular checkup");
+        appointmentSchedule.setMeetingDesc("Normal Regular checkup");
+        appointmentSchedule.setPatientId(1);
+        appointmentSchedule.setPatientName("Mack");
+        appointmentSchedule.setPhysicianId(1);
+        appointmentSchedule.setPhysicianName("Anand");
+        appointmentSchedule.setSlot(slot);
+        appointmentSchedule.setDeleted(false);
+        appointmentSchedule.setCreatedOn(todayDate);
+        appointmentSchedule.setCreatedBy("Divya");
+
+        appointmentOldSlot = new AppointmentOldSlot();
+        appointmentOldSlot.setAppointmentId(1);
+        appointmentOldSlot.setDateOfAppointment(new Date());
+        appointmentOldSlot.setLastUpdatedBy("Divya");
+        appointmentOldSlot.setLastUpdateOn(todayDate);
+        appointmentOldSlot.setMeetingTitle("checkup");
+        appointmentOldSlot.setMeetingDesc("Regular checkup");
+        appointmentOldSlot.setPatientId(1);
+        appointmentOldSlot.setPatientName("Mack");
+        appointmentOldSlot.setPhysicianId(1);
+        appointmentOldSlot.setPhysicianName("Anand");
+        appointmentOldSlot.setSlot(slot);
+        appointmentOldSlot.setDeleted(false);
+        appointmentOldSlot.setCreatedOn(todayDate);
+        appointmentOldSlot.setCreatedBy("Divya");
+        appointmentOldSlot.setOldSlotId(1);
+
+        slotMaster = new SlotMaster();
+        slotMaster.setSlotMasterId(1);
+        slotMaster.setSlotStartTime("09:00AM");
+        slotMaster.setSlotEndTime("10:00AM");
+
+        appointmentScheduleRegisterDto = new AppointmentScheduleRegisterDto();
+        appointmentScheduleRegisterDto.setAppointmentId(2);
+        appointmentScheduleRegisterDto.setDateOfAppointment(new Date());
+        appointmentScheduleRegisterDto.setLastUpdatedBy("Divya");
+        appointmentScheduleRegisterDto.setLastUpdateOn(todayDate);
+        appointmentScheduleRegisterDto.setMeetingTitle("checkup");
+        appointmentScheduleRegisterDto.setMeetingDesc("Regular checkup");
+        appointmentScheduleRegisterDto.setPatientid(1);
+        appointmentScheduleRegisterDto.setPatientname("Mack");
+        appointmentScheduleRegisterDto.setPhysicianid(1);
+        appointmentScheduleRegisterDto.setPhysicianname("Anand");
+        appointmentScheduleRegisterDto.setDeleted(false);
+        appointmentScheduleRegisterDto.setCreatedOn(todayDate);
+        appointmentScheduleRegisterDto.setCreatedBy("Divya");
+        appointmentScheduleRegisterDto.setSlotId(2);
+
+    }
+
+    //
+    @Test
+    void testGetAppointmentByID() {
+        // fail("Not yet implemented");
+        Optional<AppointmentSchedule> optional = Optional.of(appointmentSchedule);
+        Mockito.when(appointmentScheduleRepo.findById(appointmentSchedule.getAppointmentId()))
+                .thenReturn(optional);
+        AppointmentSchedule appointmentScheduleobj = appointmentServiceImpl
+                .getAppointmentByID(appointmentSchedule.getAppointmentId());
+        assertThat(appointmentScheduleobj).isNotNull();
+    }
+
+    @Test
+    void testDeleteAppointment() {
+        Optional<AppointmentSchedule> optionalAppointment = Optional.of(appointmentSchedule);
+        Optional<Slot> optionalSlot = Optional.of(slot);
+        optionalSlot.get().setDeleted(true);
+        slotRepo.save(optionalSlot.get());
+        System.out.println(slot.isDeleted());
+        assertThat(slot.isDeleted()).isEqualTo(true);
+
+        optionalAppointment.get().setDeleted(true);
+
+        appointmentSchedule.setDeleted(true);
+        appointmentScheduleRepo.save(optionalAppointment.get());
+
+        assertThat(appointmentSchedule.isDeleted()).isEqualTo(true);
+
+    }
+
+    //
+    @Test
+    void testUpdateAppointment() {
+
+        LocalDate todayDate = LocalDate.now();
+
+        Slot slot = new Slot();
+        slot.setSlotId(2);
+        slot.setStartTime(appointmentOldSlot.getSlot().getStartTime());
+        slot.setEndTime(appointmentOldSlot.getSlot().getEndTime());
+        slot.setDateOfAppointment(appointmentOldSlot.getDateOfAppointment());
+        slot.setDeleted(appointmentOldSlot.getSlot().isDeleted());
+        slot.setStatus(appointmentOldSlot.getSlot().getStatus());
+        slot.setLastUpdatedBy(appointmentOldSlot.getSlot().getLastUpdatedBy());
+        slot.setLastUpdateOn(appointmentOldSlot.getSlot().getLastUpdateOn());
+        slot.setCreatedBy(appointmentOldSlot.getSlot().getCreatedBy());
+        slot.setCreatedOn(appointmentOldSlot.getSlot().getCreatedOn());
+
+        appointmentSchedule.setAppointmentId(appointmentOldSlot.getAppointmentId());
+        appointmentSchedule.setDateOfAppointment(appointmentOldSlot.getDateOfAppointment());
+        appointmentSchedule.setMeetingDesc(appointmentOldSlot.getMeetingDesc());
+        appointmentSchedule.setMeetingTitle(appointmentOldSlot.getMeetingTitle());
+        appointmentSchedule.setSlot(slot);
+        appointmentSchedule.setPhysicianId(appointmentOldSlot.getPhysicianId());
+        appointmentSchedule.setPhysicianName(appointmentOldSlot.getPhysicianName());
+        appointmentSchedule.setPatientId(appointmentOldSlot.getPatientId());
+        appointmentSchedule.setPatientName(appointmentOldSlot.getPatientName());
+        appointmentSchedule.setLastUpdatedBy("Admin");
+        appointmentSchedule.setLastUpdateOn(todayDate);
+        appointmentSchedule.setCreatedBy("Admin");
+        appointmentSchedule.setCreatedOn(todayDate);
+
+        assertThat(appointmentSchedule.getMeetingTitle()).isEqualTo("checkup");
+    }
+
+    @Test
+    void testCreateAppointment() {
+        // fail("Not yet implemented");
+        Optional<SlotMaster> optional = Optional.of(slotMaster);
+
+        slot = new Slot();
+        slot.setSlotId(2);
+        slot.setDateOfAppointment(appointmentScheduleRegisterDto.getDateOfAppointment());
+        slot.setStartTime("09:00AM");
+        slot.setEndTime("10:00AM");
+        slot.setStatus("Available");
+        slot.setCreatedBy("Divya");
+        slot.setCreatedOn(todayDate);
+        slot.setLastUpdatedBy("Divya");
+        slot.setLastUpdateOn(todayDate);
+        slot.setDeleted(false);
+
+        AppointmentSchedule appointScheduleObj = new AppointmentSchedule();
+        appointScheduleObj.setAppointmentId(appointmentScheduleRegisterDto.getAppointmentId());
+        appointScheduleObj.setDateOfAppointment(appointmentScheduleRegisterDto.getDateOfAppointment());
+        appointScheduleObj.setLastUpdatedBy(appointmentScheduleRegisterDto.getLastUpdatedBy());
+        appointScheduleObj.setLastUpdateOn(appointmentScheduleRegisterDto.getLastUpdateOn());
+        appointScheduleObj.setMeetingTitle(appointmentScheduleRegisterDto.getMeetingTitle());
+        appointScheduleObj.setMeetingDesc(appointmentScheduleRegisterDto.getMeetingDesc());
+        appointScheduleObj.setPatientId(appointmentScheduleRegisterDto.getPatientid());
+        appointScheduleObj.setPatientName(appointmentScheduleRegisterDto.getPatientname());
+        appointScheduleObj.setPhysicianId(appointmentScheduleRegisterDto.getPhysicianid());
+        appointScheduleObj.setPhysicianName(appointmentScheduleRegisterDto.getPhysicianname());
+        appointScheduleObj.setSlot(slot);
+        appointScheduleObj.setDeleted(appointmentScheduleRegisterDto.isDeleted());
+        appointScheduleObj.setCreatedOn(appointmentScheduleRegisterDto.getCreatedOn());
+        appointScheduleObj.setCreatedBy(appointmentScheduleRegisterDto.getCreatedBy());
+        
+        
+        Mockito.when(appointmentScheduleRepo.save(appointScheduleObj)).thenReturn(appointScheduleObj);
+        assertThat(appointmentServiceImpl.createAppointment(appointmentScheduleRegisterDto)).isNotNull();
+    }
+
+}

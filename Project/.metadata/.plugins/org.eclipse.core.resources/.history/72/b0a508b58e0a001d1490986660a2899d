@@ -1,0 +1,66 @@
+package com.impact.project.serviceimpl;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.impact.project.entities.Physician;
+import com.impact.project.repo.PhysicianDao;
+
+@ExtendWith(MockitoExtension.class)
+class PhysicianServiceImplTest {
+
+    @Mock
+    private PhysicianDao physicianDao;
+
+    @InjectMocks
+    PhysicianServiceImpl physicianServiceImpl;
+
+    Physician physician;
+
+    List<Physician> physicianList;
+
+    @BeforeEach
+    public void setUp() {
+        physician = new Physician();
+        physician.setPhysicianId(1);
+        physician.setActive(false);
+        physicianList.add(physician);
+    }
+
+    @Test
+    void testUpdatePhysician() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAllPhysiciansDetails() {
+        // fail("Not yet implemented");
+        Mockito.when(physicianDao.findAll()).thenReturn(physicianList);
+
+    }
+
+    @Test
+    void testGetPhysicianById() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetAllPhysicianListForAppointment() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    void testGetSpecializationAddress() {
+        fail("Not yet implemented");
+    }
+
+}

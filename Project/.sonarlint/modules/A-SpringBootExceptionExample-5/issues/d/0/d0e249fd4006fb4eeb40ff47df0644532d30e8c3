@@ -1,0 +1,11 @@
+
+Šsquid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "cust".(÷‰€H÷÷RMINORZ
+CODE_SMELL
+Ysquid:S1168""+Return an empty collection instead of null.(¥¹ïHø÷RMAJORZ
+CODE_SMELL
+squid:UselessImportCheck"ARemove this unused import 'javax.persistence.PersistenceContext'.(ê°İÒıÿÿÿÿHù÷RMINORZ
+CODE_SMELL
+|squid:UselessImportCheck"<Remove this unused import 'javax.persistence.EntityManager'.(ğàËÒıÿÿÿÿHú÷RMINORZ
+CODE_SMELL
+|squid:UselessImportCheck"<Remove this unused import 'javax.transaction.Transactional'.(ûÒçÑúÿÿÿÿHû÷RMINORZ
+CODE_SMELL

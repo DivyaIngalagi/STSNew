@@ -1,0 +1,138 @@
+package com.impact.project.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.impact.project.dto.AppointmentDto;
+import com.impact.project.dto.AppointmentOldSlot;
+import com.impact.project.dto.AppointmentScheduleRegisterDto;
+import com.impact.project.dto.PatientDto;
+import com.impact.project.dto.PhysicianDto;
+import com.impact.project.model.AppointmentSchedule;
+import com.impact.project.model.NotificationCancel;
+import com.impact.project.model.SlotMaster;
+import com.impact.project.service.AppointmentScheduleService;
+import com.impact.project.service.SlotMasterService;
+
+@CrossOrigin(origins = "http://localhost:8787")
+@RestController
+@RequestMapping("/appointmentschedule")
+public class AppointmentScheduleController {
+
+    @Autowired
+    private AppointmentScheduleService appointService;
+
+    @Autowired
+    private SlotMasterService slotMasterService;
+
+    @PostMapping("/add")
+    public ResponseEntity saveAppointment(@RequestBody AppointmentScheduleRegisterDto appointschedule) {
+
+        AppointmentSchedule appointmentSaveDetails = appointService.createAppointment(appointschedule);
+        System.out.println("appointschedule " + appointschedule.getSlotId());
+        return ResponseEntity.ok(appointmentSaveDetails);
+    }
+
+    @GetMapping("/appointments/{appointmentId}")
+    public AppointmentSchedule getAppointmentByID(@PathVariable int appointmentId) {
+
+        AppointmentSchedule appSchedGet = appointService.getAppointmentByID(appointmentId);
+        return appSchedGet;
+    }
+
+    @GetMapping("/appointments")
+    public List<AppointmentDto> getAllAppointment() {
+
+        List<AppointmentDto> allAppointment = appointService.displayAllAppointment();
+        return allAppointment;
+    }
+
+    @GetMapping("/slots")
+    public ResponseEntity getAllSlot() {
+        List<SlotMaster> slots = slotMasterService.getAllSlot();
+        return ResponseEntity.ok(slots);
+    }
+
+    @GetMapping("/appointment/doctor/{doctorId}")
+    public List<AppointmentDto> getAppointment(@PathVariable int doctorId) {
+
+        List<AppointmentDto> displaDoctorAppointment = appointService.displayAppointmentByDoctorId(doctorId);
+        return displaDoctorAppointment;
+    }
+
+    @GetMapping("/appointment/patient/{patientId}")
+    public List<AppointmentDto> getAppointmentByPatient(@PathVariable int patientId) {
+
+        List<AppointmentDto> displayPatientAppointment = appointService
+                .displayAppointmentByPatientId(patientId);
+        return displayPatientAppointment;
+    }
+
+    @GetMapping("/patient/appointmenthistory/{patientId}")
+    public List<AppointmentDto> getAppointmentHistoryByPatient(@PathVariable int patientId) {
+
+        List<AppointmentDto> displayPatientAppointmentHistory = appointService
+                .displayAppointmentHistoryByPatientId(patientId);
+        return displayPatientAppointmentHistory;
+    }
+
+    @DeleteMapping("/delete/{appointmentId}")
+    public void deleteAppointment(@PathVariable int appointmentId) {
+        appointService.deleteAppointment(appointmentId);
+
+    }
+
+    @PutMapping("/update")
+    public ResponseEntity updateAppointment(@RequestBody AppointmentOldSlot appointSlot) {
+        AppointmentOldSlot appschedule = appointService.updateAppointment(appointSlot);
+        return ResponseEntity.ok(appschedule);
+    }
+
+    @GetMapping("/notification/{patientId}")
+    public List<NotificationCancel> getNotification(@PathVariable int patientId) {
+        List<NotificationCancel> notification = appointService.getNotification(patientId);
+
+        return notification;
+
+    }
+
+    // fetpatient from patientService
+    @GetMapping("/getpatientname/{patientId}")
+    public String getPatientNameById(@PathVariable int patientId) {
+        String patientName = appointService.getPatientName(patientId);
+
+        return patientName;
+
+    }
+
+    // fetch all Physisciaans from Admin Service
+    @GetMapping("/getphysicians")
+    public List<PhysicianDto> getphysicianlist() {
+        System.out.println("");
+        List<PhysicianDto> phydto = appointService.getPhysicianList();
+
+        return phydto;
+
+    }
+
+    @GetMapping("/getpatients")
+    public List<PatientDto> getpatientlist() {
+        System.out.println("");
+        List<PatientDto> patientdto = appointService.getPatientList();
+
+        return patientdto;
+
+    }
+
+}

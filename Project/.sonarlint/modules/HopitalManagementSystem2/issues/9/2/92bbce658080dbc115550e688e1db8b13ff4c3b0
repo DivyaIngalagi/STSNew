@@ -1,0 +1,7 @@
+
+psquid:UselessImportCheck"5Remove this unused import 'com.example.model.Doctor'.(ßó½œH¤ÎRMINORZ
+CODE_SMELL
+vsquid:UselessImportCheck"6Remove this unused import 'com.example.model.Patient'.( üó»ÿÿÿÿÿH¥ÎRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿH¦ÎRMINORZ
+CODE_SMELL

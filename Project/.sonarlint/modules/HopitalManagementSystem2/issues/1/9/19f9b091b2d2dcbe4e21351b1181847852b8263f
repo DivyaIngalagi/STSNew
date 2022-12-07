@@ -1,0 +1,49 @@
+
+squid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.ModelAttribute'.(®ùæéHRMINORZ
+CODE_SMELL
+l
+squid:S106Ë"9Replace this use of System.out or System.err by a logger.(³ÓÊÜúÿÿÿÿHRMAJORZ
+CODE_SMELL
+ƒsquid:S00100™"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’÷–ÈÿÿÿÿÿHRMINORZ
+CODE_SMELL
+‚squid:S00100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¦ò‡üÿÿÿÿHRMINORZ
+CODE_SMELL
+‚squid:S00100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ïíÊÿÿÿÿÿH‘RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck""9Remove this unused import 'com.example.model.DoctorName'.(¥›ÎöH’RMINORZ
+CODE_SMELL
+‚squid:S00100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÿ»ÍùÿÿÿÿH“RMINORZ
+CODE_SMELL
+~squid:S00100©"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦»Ğ¸H”RMINORZ
+CODE_SMELL
+~squid:S00100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…²íH•RMINORZ
+CODE_SMELL
+‘squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿH–RMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿH—RMINORZ
+CODE_SMELL
+}squid:S00100p"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…²íH˜RMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"4Remove this unused import 'java.lang.reflect.Array'.(‡¡É˜H™RMINORZ
+CODE_SMELL
+l
+squid:S106Ì"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿHšRMAJORZ
+CODE_SMELL
+‘squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.ResponseBody'.(•¶¶êøÿÿÿÿH›RMINORZ
+CODE_SMELL
+’squid:UselessImportCheck"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™ĞÿûÿÿÿÿHœRMINORZ
+CODE_SMELL
+ƒsquid:S00100»"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å×­—úÿÿÿÿHRMINORZ
+CODE_SMELL
+“squid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íş¡şÿÿÿÿHRMINORZ
+CODE_SMELL
+‰squid:UselessImportCheck"IRemove this unused import 'org.springframework.web.servlet.ModelAndView'.(Ç¨ÿäûÿÿÿÿHŸRMINORZ
+CODE_SMELL
+Šsquid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›H RMINORZ
+CODE_SMELL
+Ysquid:S1481s"&Remove this unused "d" local variable.(®Òğ•ûÿÿÿÿH¡RMINORZ
+CODE_SMELL
+squid:UselessImportCheck"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ö»¿ëH¢RMINORZ
+CODE_SMELL
+nsquid:UselessImportCheck"3Remove this unused import 'com.example.model.City'.(’Ğ”­H£RMINORZ
+CODE_SMELL
